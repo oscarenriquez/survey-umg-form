@@ -25,7 +25,9 @@
     End Sub
 
     Private Sub btnFinalizar_Click(sender As Object, e As EventArgs) Handles btnFinalizar.Click
-        ctrl.SixthStep()
+        If MessageBox.Show("¿Esta seguro de guardar la encuesta?, no podrá realizar ningún cambio después de ser Guardada.", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK Then
+            ctrl.SixthStep()
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
