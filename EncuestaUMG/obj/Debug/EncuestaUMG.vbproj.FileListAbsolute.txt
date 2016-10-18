@@ -21,4 +21,3 @@ C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\Encue
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\bin\Debug\EncuestaUMG.application
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.exe.manifest
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.application
-C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.SplashScreen2.resources

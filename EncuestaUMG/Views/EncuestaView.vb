@@ -6,6 +6,8 @@
         ctrl = New EncuestaController(Me)
         ctrl.FillComboBoxes()
         ctrl.FirstStep()
+        Console.WriteLine(Me.pn1.TabIndex.ToString())
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
@@ -25,7 +27,7 @@
     End Sub
 
     Private Sub btnFinalizar_Click(sender As Object, e As EventArgs) Handles btnFinalizar.Click
-        If MessageBox.Show("¿Esta seguro de guardar la encuesta?, no podrá realizar ningún cambio después de ser Guardada.", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK Then
+        If MessageBox.Show("¿Esta seguro de guardar la encuesta?" & vbCr & "No podrá realizar ningún cambio después de ser Guardada.", "Information", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = DialogResult.OK Then
             ctrl.SixthStep()
         End If
     End Sub
@@ -62,8 +64,11 @@
         ctrl.BackFouthStep()
     End Sub
 
-    Private Sub FocusOutRadioButtonsLastStep(sender As Object, e As EventArgs) Handles pnLastStep4.Leave, pnLastStep3.Leave, pnLastStep2.Leave, pnLastStep1.Leave
+    Private Sub FocusOutRadioButtonsLastStep(sender As Object, e As EventArgs) Handles pnLastStep4.Leave, pnLastStep3.Leave, pnLastStep2.Leave
         ctrl.RefreshTotal()
     End Sub
 
+    Friend Sub ShowAlert(message As String)
+        MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    End Sub
 End Class

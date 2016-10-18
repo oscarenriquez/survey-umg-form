@@ -40,30 +40,33 @@
         view.cbCurso.DisplayMember = "Nombre"
         view.cbDocente.DisplayMember = "Nombre"
         view.cbJornada.DisplayMember = "Nombre"
+        Try
+            'Llena Combo de Carreras
+            Dim listaCarreras As List(Of Carrera) = carreraADO.ListEntities()
+            For Each carrera In listaCarreras
+                view.cbCarrera.Items.Add(carrera)
+            Next
 
-        'Llena Combo de Carreras
-        Dim listaCarreras As List(Of Carrera) = carreraADO.ListEntities()
-        For Each carrera In listaCarreras
-            view.cbCarrera.Items.Add(carrera)
-        Next
+            'Llena Combo de Cursos
+            Dim listaCursos As List(Of Curso) = cursoADO.ListEntities()
+            For Each curso In listaCursos
+                view.cbCurso.Items.Add(curso)
+            Next
 
-        'Llena Combo de Cursos
-        Dim listaCursos As List(Of Curso) = cursoADO.ListEntities()
-        For Each curso In listaCursos
-            view.cbCurso.Items.Add(curso)
-        Next
+            'Llena Combo de Docentes
+            Dim listaDocentes As List(Of Docente) = docenteADO.ListEntities()
+            For Each docente In listaDocentes
+                view.cbDocente.Items.Add(docente)
+            Next
 
-        'Llena Combo de Docentes
-        Dim listaDocentes As List(Of Docente) = docenteADO.ListEntities()
-        For Each docente In listaDocentes
-            view.cbDocente.Items.Add(docente)
-        Next
-
-        'Llena Combo de Jornada
-        Dim listaJornadas As List(Of Jornada) = jornadaADO.ListEntities()
-        For Each jornada In listaJornadas
-            view.cbJornada.Items.Add(jornada)
-        Next
+            'Llena Combo de Jornada
+            Dim listaJornadas As List(Of Jornada) = jornadaADO.ListEntities()
+            For Each jornada In listaJornadas
+                view.cbJornada.Items.Add(jornada)
+            Next
+        Catch ex As Exception
+            view.ShowAlert(ex.Message)
+        End Try
     End Sub
 
     Public Sub OnChangeComboBoxDocentes()
@@ -78,6 +81,7 @@
     Public Sub FirstStep()
         view.tabCtrlEncuesta.TabPages.Clear()
         view.tabCtrlEncuesta.TabPages.Add(view.TabPage5)
+        view.cbDocente.Focus()
     End Sub
 
     Public Sub SecondStep()
@@ -109,6 +113,8 @@
             view.tabCtrlEncuesta.TabPages.Clear()
             view.tabCtrlEncuesta.TabPages.Add(view.TabPage1)
             view.tabCtrlEncuesta.SelectedTab = view.TabPage1
+            'Set focus panel1
+            view.pn1.Focus()
         Else
             view.ShowIncompleteData()
         End If
@@ -147,7 +153,8 @@
             view.tabCtrlEncuesta.TabPages.Clear()
             view.tabCtrlEncuesta.TabPages.Add(view.TabPage2)
             view.tabCtrlEncuesta.SelectedTab = view.TabPage2
-
+            'Set focus panel 8
+            view.pn8.Focus()
         Else
             view.ShowIncompleteEncuesta()
         End If
@@ -179,7 +186,8 @@
             view.tabCtrlEncuesta.TabPages.Clear()
             view.tabCtrlEncuesta.TabPages.Add(view.TabPage3)
             view.tabCtrlEncuesta.SelectedTab = view.TabPage3
-
+            'Set focus panel 13
+            view.pn13.Focus()
         Else
             view.ShowIncompleteEncuesta()
         End If
@@ -226,7 +234,8 @@
             view.tabCtrlEncuesta.TabPages.Clear()
             view.tabCtrlEncuesta.TabPages.Add(view.TabPage4)
             view.tabCtrlEncuesta.SelectedTab = view.TabPage4
-
+            'Set focus panel 22
+            view.pn22.Focus()
         Else
             view.ShowIncompleteEncuesta()
         End If
@@ -255,10 +264,14 @@
             listaEncuesta.Add(New Encuesta(Id_carrera, Id_docente, Id_curso, Id_jornada, q24, p24, Fecha))
             listaEncuesta.Add(New Encuesta(Id_carrera, Id_docente, Id_curso, Id_jornada, q25, p25, Fecha))
 
-            SaveAllEncuesta()
-            view.Close()
-            listaEncuesta.Clear()
-            listaEncuesta = Nothing
+            Try
+                SaveAllEncuesta()
+                view.Close()
+                listaEncuesta.Clear()
+                listaEncuesta = Nothing
+            Catch ex As Exception
+                view.ShowAlert(ex.Message)
+            End Try
 
         Else
             view.ShowIncompleteEncuesta()
@@ -269,18 +282,21 @@
         view.tabCtrlEncuesta.TabPages.Clear()
         view.tabCtrlEncuesta.TabPages.Add(view.TabPage1)
         view.tabCtrlEncuesta.SelectedTab = view.TabPage1
+        view.pn1.Focus()
     End Sub
 
     Public Sub BackThridStep()
         view.tabCtrlEncuesta.TabPages.Clear()
         view.tabCtrlEncuesta.TabPages.Add(view.TabPage2)
         view.tabCtrlEncuesta.SelectedTab = view.TabPage2
+        view.pn8.Focus()
     End Sub
 
     Public Sub BackFouthStep()
         view.tabCtrlEncuesta.TabPages.Clear()
         view.tabCtrlEncuesta.TabPages.Add(view.TabPage3)
         view.tabCtrlEncuesta.SelectedTab = view.TabPage3
+        view.pn13.Focus()
     End Sub
 
     Public Sub RefreshTotal()

@@ -35,8 +35,8 @@ Public Class CarreraADO
 
             reader.Close()
         Catch ex As Exception
-            Console.WriteLine(ex.Message)
             Console.WriteLine(ex.StackTrace)
+            Throw New Exception("CarreraADO, " & ex.Message)
         Finally
             If (connection IsNot Nothing) Then
                 connection.Close()

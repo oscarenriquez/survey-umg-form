@@ -23,17 +23,21 @@
         view.cbGCarrera.DisplayMember = "Nombre"
         view.cbGJornada.DisplayMember = "Nombre"
 
-        'Llena Combo de Carreras
-        Dim listaCarreras As List(Of Carrera) = carreraADO.ListEntities()
-        For Each carrera In listaCarreras
-            view.cbGCarrera.Items.Add(carrera)
-        Next
+        Try
+            'Llena Combo de Carreras
+            Dim listaCarreras As List(Of Carrera) = carreraADO.ListEntities()
+            For Each carrera In listaCarreras
+                view.cbGCarrera.Items.Add(carrera)
+            Next
 
-        'Llena Combo de Jornada
-        Dim listaJornadas As List(Of Jornada) = jornadaADO.ListEntities()
-        For Each jornada In listaJornadas
-            view.cbGJornada.Items.Add(jornada)
-        Next
+            'Llena Combo de Jornada
+            Dim listaJornadas As List(Of Jornada) = jornadaADO.ListEntities()
+            For Each jornada In listaJornadas
+                view.cbGJornada.Items.Add(jornada)
+            Next
+        Catch ex As Exception
+            view.ShowAlert(ex.Message)
+        End Try
     End Sub
 
     Public Sub GenerateGraph()
@@ -53,21 +57,27 @@
             Me.Id_carrera = carrera.Id
             Me.Id_jornada = jornada.Id
 
-            Dim lista As List(Of Dictionary(Of String, Object)) = encuestaADO.GetDataGrafica(Me.Fecha, Me.Id_carrera, Me.Id_jornada)
-
             view.Chart1.Series("EX").Points.Clear()
             view.Chart1.Series("MB").Points.Clear()
             view.Chart1.Series("B").Points.Clear()
             view.Chart1.Series("NM").Points.Clear()
 
-            For Each dictionary In lista
-                Dim Nombre As String = dictionary.Item("Nombre")
-                Dim Codigo As String = dictionary.Item("Codigo")
-                Dim Cantidad As Integer = dictionary.Item("Cantidad")
+            Try
+                Dim lista As List(Of Dictionary(Of String, Object)) = encuestaADO.GetDataGrafica(Me.Fecha, Me.Id_carrera, Me.Id_jornada)
+                If lista.Count > 0 Then
+                    For Each dictionary In lista
+                        Dim Nombre As String = dictionary.Item("Nombre")
+                        Dim Codigo As String = dictionary.Item("Codigo")
+                        Dim Cantidad As Integer = dictionary.Item("Cantidad")
 
-                view.Chart1.Series(Codigo).Points.AddXY(Nombre, Cantidad)
-            Next
-
+                        view.Chart1.Series(Codigo).Points.AddXY(Nombre, Cantidad)
+                    Next
+                Else
+                    view.ShowAlert("¡No existe Información!")
+                End If
+            Catch ex As Exception
+                view.ShowAlert(ex.Message)
+            End Try
         Else
             view.ShowIncompleteData()
         End If

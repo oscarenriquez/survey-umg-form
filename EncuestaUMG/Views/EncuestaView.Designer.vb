@@ -28,22 +28,35 @@ Partial Class EncuestaView
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblCodigo = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.dpFecha = New System.Windows.Forms.DateTimePicker()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.cbDocente = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.cbJornada = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.cbCarrera = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.cbCurso = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbCurso = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cbDocente = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cbCarrera = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cbJornada = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.tableCalificacion = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.btnBack1 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.btnContinuar1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -77,16 +90,11 @@ Partial Class EncuestaView
         Me.rbB2 = New System.Windows.Forms.RadioButton()
         Me.rbMB2 = New System.Windows.Forms.RadioButton()
         Me.rbEX2 = New System.Windows.Forms.RadioButton()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pn1 = New System.Windows.Forms.Panel()
         Me.rbNM1 = New System.Windows.Forms.RadioButton()
         Me.rbB1 = New System.Windows.Forms.RadioButton()
         Me.rbMB1 = New System.Windows.Forms.RadioButton()
         Me.rbEX1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.lbPregunta1 = New System.Windows.Forms.Label()
         Me.lb1 = New System.Windows.Forms.Label()
         Me.lb2 = New System.Windows.Forms.Label()
@@ -102,8 +110,20 @@ Partial Class EncuestaView
         Me.lbPregunta6 = New System.Windows.Forms.Label()
         Me.lbPregunta7 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.btnBack2 = New System.Windows.Forms.Button()
+        Me.tableCalificacion2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.btnBack2 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel11 = New System.Windows.Forms.Panel()
@@ -126,16 +146,11 @@ Partial Class EncuestaView
         Me.rbB9 = New System.Windows.Forms.RadioButton()
         Me.rbMB9 = New System.Windows.Forms.RadioButton()
         Me.rbEX9 = New System.Windows.Forms.RadioButton()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.pn8 = New System.Windows.Forms.Panel()
         Me.rbNM8 = New System.Windows.Forms.RadioButton()
         Me.rbB8 = New System.Windows.Forms.RadioButton()
         Me.rbMB8 = New System.Windows.Forms.RadioButton()
         Me.rbEX8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton61 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton62 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton63 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton64 = New System.Windows.Forms.RadioButton()
         Me.lbPregunta8 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
@@ -148,8 +163,20 @@ Partial Class EncuestaView
         Me.lbPregunta12 = New System.Windows.Forms.Label()
         Me.btnContinuar2 = New System.Windows.Forms.Button()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.btnBack3 = New System.Windows.Forms.Button()
+        Me.tableCalificacion3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.btnBack3 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label29 = New System.Windows.Forms.Label()
@@ -183,16 +210,11 @@ Partial Class EncuestaView
         Me.rbB14 = New System.Windows.Forms.RadioButton()
         Me.rbMB14 = New System.Windows.Forms.RadioButton()
         Me.rbEX14 = New System.Windows.Forms.RadioButton()
-        Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.pn13 = New System.Windows.Forms.Panel()
         Me.rbNM13 = New System.Windows.Forms.RadioButton()
         Me.rbB13 = New System.Windows.Forms.RadioButton()
         Me.rbMB13 = New System.Windows.Forms.RadioButton()
         Me.rbEX13 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton93 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton94 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton95 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton96 = New System.Windows.Forms.RadioButton()
         Me.lbPregunta13 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
@@ -222,8 +244,20 @@ Partial Class EncuestaView
         Me.rbEX21 = New System.Windows.Forms.RadioButton()
         Me.btnContinuar3 = New System.Windows.Forms.Button()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.btnBack4 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.Label71 = New System.Windows.Forms.Label()
+        Me.Label72 = New System.Windows.Forms.Label()
+        Me.Label73 = New System.Windows.Forms.Label()
+        Me.Label74 = New System.Windows.Forms.Label()
+        Me.btnBack4 = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.lbTotal = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
@@ -243,16 +277,11 @@ Partial Class EncuestaView
         Me.rbB23 = New System.Windows.Forms.RadioButton()
         Me.rbMB23 = New System.Windows.Forms.RadioButton()
         Me.rbEX23 = New System.Windows.Forms.RadioButton()
-        Me.Panel31 = New System.Windows.Forms.Panel()
-        Me.pnLastStep1 = New System.Windows.Forms.Panel()
+        Me.pn22 = New System.Windows.Forms.Panel()
         Me.rbNM22 = New System.Windows.Forms.RadioButton()
         Me.rbB22 = New System.Windows.Forms.RadioButton()
         Me.rbMB22 = New System.Windows.Forms.RadioButton()
         Me.rbEX22 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton125 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton126 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton127 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton128 = New System.Windows.Forms.RadioButton()
         Me.lbPregunta22 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -265,7 +294,9 @@ Partial Class EncuestaView
         Me.tabCtrlEncuesta.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.TableLayoutPanel7.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.tableCalificacion.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.pn7.SuspendLayout()
@@ -274,18 +305,18 @@ Partial Class EncuestaView
         Me.pn4.SuspendLayout()
         Me.pn3.SuspendLayout()
         Me.pn2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.pn1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.tableCalificacion2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.Panel12.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel14.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel16.SuspendLayout()
+        Me.pn8.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.tableCalificacion3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.Panel17.SuspendLayout()
@@ -294,18 +325,17 @@ Partial Class EncuestaView
         Me.Panel20.SuspendLayout()
         Me.Panel21.SuspendLayout()
         Me.Panel22.SuspendLayout()
-        Me.Panel23.SuspendLayout()
-        Me.Panel24.SuspendLayout()
+        Me.pn13.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        Me.TableLayoutPanel6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.pnLastStep4.SuspendLayout()
         Me.pnLastStep3.SuspendLayout()
         Me.pnLastStep2.SuspendLayout()
-        Me.Panel31.SuspendLayout()
-        Me.pnLastStep1.SuspendLayout()
+        Me.pn22.SuspendLayout()
         Me.SuspendLayout()
         '
         'tabCtrlEncuesta
@@ -322,6 +352,7 @@ Partial Class EncuestaView
         Me.tabCtrlEncuesta.SelectedIndex = 0
         Me.tabCtrlEncuesta.Size = New System.Drawing.Size(784, 611)
         Me.tabCtrlEncuesta.TabIndex = 0
+        Me.tabCtrlEncuesta.TabStop = False
         '
         'TabPage5
         '
@@ -347,7 +378,7 @@ Partial Class EncuestaView
         Me.btnCancelar.Location = New System.Drawing.Point(494, 530)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(129, 32)
-        Me.btnCancelar.TabIndex = 0
+        Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cerrar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
@@ -362,7 +393,7 @@ Partial Class EncuestaView
         Me.btnAceptar.Location = New System.Drawing.Point(639, 530)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(129, 32)
-        Me.btnAceptar.TabIndex = 1
+        Me.btnAceptar.TabIndex = 5
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = True
         '
@@ -371,19 +402,8 @@ Partial Class EncuestaView
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.AliceBlue
-        Me.GroupBox1.Controls.Add(Me.lblCodigo)
+        Me.GroupBox1.Controls.Add(Me.TableLayoutPanel7)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.dpFecha)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.cbDocente)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.cbJornada)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.cbCarrera)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.cbCurso)
-        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial Narrow", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(8, 19)
         Me.GroupBox1.Name = "GroupBox1"
@@ -392,151 +412,190 @@ Partial Class EncuestaView
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Evaluación Docente"
         '
+        'TableLayoutPanel7
+        '
+        Me.TableLayoutPanel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel7.ColumnCount = 5
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
+        Me.TableLayoutPanel7.Controls.Add(Me.lblCodigo, 3, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.dpFecha, 3, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label1, 0, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.cbCurso, 3, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label3, 0, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.cbDocente, 1, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label6, 2, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.cbCarrera, 1, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label5, 2, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.cbJornada, 1, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label2, 2, 0)
+        Me.TableLayoutPanel7.Controls.Add(Me.Label4, 0, 0)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(6, 28)
+        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
+        Me.TableLayoutPanel7.RowCount = 3
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(748, 247)
+        Me.TableLayoutPanel7.TabIndex = 15
+        '
         'lblCodigo
         '
         Me.lblCodigo.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblCodigo.AutoEllipsis = True
         Me.lblCodigo.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCodigo.Location = New System.Drawing.Point(519, 44)
+        Me.lblCodigo.Location = New System.Drawing.Point(488, 28)
         Me.lblCodigo.Name = "lblCodigo"
-        Me.lblCodigo.Size = New System.Drawing.Size(129, 26)
+        Me.lblCodigo.Size = New System.Drawing.Size(218, 26)
         Me.lblCodigo.TabIndex = 14
         Me.lblCodigo.Text = "____________________"
         Me.lblCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label7
-        '
-        Me.Label7.AutoEllipsis = True
-        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(60, 296)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(629, 45)
-        Me.Label7.TabIndex = 13
-        Me.Label7.Text = resources.GetString("Label7.Text")
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'dpFecha
         '
+        Me.dpFecha.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dpFecha.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dpFecha.Location = New System.Drawing.Point(519, 176)
+        Me.dpFecha.Location = New System.Drawing.Point(488, 194)
         Me.dpFecha.Name = "dpFecha"
-        Me.dpFecha.Size = New System.Drawing.Size(200, 23)
-        Me.dpFecha.TabIndex = 5
+        Me.dpFecha.Size = New System.Drawing.Size(218, 23)
+        Me.dpFecha.TabIndex = 4
         '
-        'Label6
+        'Label1
         '
-        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoEllipsis = True
-        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(382, 177)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(124, 26)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Fecha:"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label1.AutoEllipsis = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(3, 82)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(143, 82)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Carrera:"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'cbDocente
+        'cbCurso
         '
-        Me.cbDocente.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbDocente.FormattingEnabled = True
-        Me.cbDocente.Location = New System.Drawing.Point(132, 47)
-        Me.cbDocente.Name = "cbDocente"
-        Me.cbDocente.Size = New System.Drawing.Size(200, 24)
-        Me.cbDocente.TabIndex = 3
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoEllipsis = True
-        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(379, 111)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(134, 26)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Curso:"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoEllipsis = True
-        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(11, 44)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 26)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "Nombre del Docente:"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'cbJornada
-        '
-        Me.cbJornada.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbJornada.FormattingEnabled = True
-        Me.cbJornada.Location = New System.Drawing.Point(132, 171)
-        Me.cbJornada.Name = "cbJornada"
-        Me.cbJornada.Size = New System.Drawing.Size(200, 24)
-        Me.cbJornada.TabIndex = 4
+        Me.cbCurso.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbCurso.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbCurso.FormattingEnabled = True
+        Me.cbCurso.Location = New System.Drawing.Point(488, 110)
+        Me.cbCurso.Name = "cbCurso"
+        Me.cbCurso.Size = New System.Drawing.Size(218, 24)
+        Me.cbCurso.TabIndex = 2
         '
         'Label3
         '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoEllipsis = True
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(11, 175)
+        Me.Label3.Location = New System.Drawing.Point(3, 164)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(112, 26)
+        Me.Label3.Size = New System.Drawing.Size(143, 83)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Jornada:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'cbDocente
+        '
+        Me.cbDocente.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbDocente.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDocente.FormattingEnabled = True
+        Me.cbDocente.Location = New System.Drawing.Point(152, 28)
+        Me.cbDocente.Name = "cbDocente"
+        Me.cbDocente.Size = New System.Drawing.Size(218, 24)
+        Me.cbDocente.TabIndex = 0
+        '
+        'Label6
+        '
+        Me.Label6.AutoEllipsis = True
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(376, 164)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(106, 83)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Fecha:"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'cbCarrera
         '
+        Me.cbCarrera.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbCarrera.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCarrera.FormattingEnabled = True
-        Me.cbCarrera.Location = New System.Drawing.Point(132, 113)
+        Me.cbCarrera.Location = New System.Drawing.Point(152, 110)
         Me.cbCarrera.Name = "cbCarrera"
-        Me.cbCarrera.Size = New System.Drawing.Size(200, 24)
+        Me.cbCarrera.Size = New System.Drawing.Size(218, 24)
         Me.cbCarrera.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoEllipsis = True
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(376, 82)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 82)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Curso:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cbJornada
+        '
+        Me.cbJornada.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbJornada.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbJornada.FormattingEnabled = True
+        Me.cbJornada.Location = New System.Drawing.Point(152, 193)
+        Me.cbJornada.Name = "cbJornada"
+        Me.cbJornada.Size = New System.Drawing.Size(218, 24)
+        Me.cbJornada.TabIndex = 3
         '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoEllipsis = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(384, 45)
+        Me.Label2.Location = New System.Drawing.Point(376, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 26)
+        Me.Label2.Size = New System.Drawing.Size(106, 82)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Codigo:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'cbCurso
+        'Label4
         '
-        Me.cbCurso.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbCurso.FormattingEnabled = True
-        Me.cbCurso.Location = New System.Drawing.Point(519, 113)
-        Me.cbCurso.Name = "cbCurso"
-        Me.cbCurso.Size = New System.Drawing.Size(200, 24)
-        Me.cbCurso.TabIndex = 2
+        Me.Label4.AutoEllipsis = True
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(3, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label4.Size = New System.Drawing.Size(143, 82)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Nombre del Docente:"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label1
+        'Label7
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoEllipsis = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(14, 111)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 26)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Carrera:"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoEllipsis = True
+        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(12, 296)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(742, 86)
+        Me.Label7.TabIndex = 13
+        Me.Label7.Text = resources.GetString("Label7.Text")
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabPage1
         '
         Me.TabPage1.AutoScroll = True
         Me.TabPage1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.TabPage1.Controls.Add(Me.tableCalificacion)
         Me.TabPage1.Controls.Add(Me.btnBack1)
-        Me.TabPage1.Controls.Add(Me.Label8)
         Me.TabPage1.Controls.Add(Me.btnContinuar1)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 24)
@@ -546,9 +605,197 @@ Partial Class EncuestaView
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "ORGANIZACIÓN Y CUMPLIMIENTO"
         '
+        'tableCalificacion
+        '
+        Me.tableCalificacion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tableCalificacion.BackColor = System.Drawing.Color.AliceBlue
+        Me.tableCalificacion.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.tableCalificacion.ColumnCount = 3
+        Me.tableCalificacion.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tableCalificacion.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tableCalificacion.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.tableCalificacion.Controls.Add(Me.Label30, 2, 3)
+        Me.tableCalificacion.Controls.Add(Me.Label22, 1, 3)
+        Me.tableCalificacion.Controls.Add(Me.Label21, 0, 3)
+        Me.tableCalificacion.Controls.Add(Me.Label20, 2, 2)
+        Me.tableCalificacion.Controls.Add(Me.Label19, 1, 2)
+        Me.tableCalificacion.Controls.Add(Me.Label18, 0, 2)
+        Me.tableCalificacion.Controls.Add(Me.Label17, 2, 1)
+        Me.tableCalificacion.Controls.Add(Me.Label16, 1, 1)
+        Me.tableCalificacion.Controls.Add(Me.Label15, 0, 1)
+        Me.tableCalificacion.Controls.Add(Me.Label14, 2, 0)
+        Me.tableCalificacion.Controls.Add(Me.Label13, 1, 0)
+        Me.tableCalificacion.Controls.Add(Me.Label12, 0, 0)
+        Me.tableCalificacion.Location = New System.Drawing.Point(264, 475)
+        Me.tableCalificacion.Name = "tableCalificacion"
+        Me.tableCalificacion.RowCount = 4
+        Me.tableCalificacion.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion.Size = New System.Drawing.Size(237, 100)
+        Me.tableCalificacion.TabIndex = 15
+        '
+        'Label30
+        '
+        Me.Label30.AutoEllipsis = True
+        Me.Label30.AutoSize = True
+        Me.Label30.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label30.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(168, 73)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(65, 26)
+        Me.Label30.TabIndex = 11
+        Me.Label30.Text = "1 punto"
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label22
+        '
+        Me.Label22.AutoEllipsis = True
+        Me.Label22.AutoSize = True
+        Me.Label22.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label22.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(51, 73)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(110, 26)
+        Me.Label22.TabIndex = 10
+        Me.Label22.Text = "Necesita mejorar"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label21
+        '
+        Me.Label21.AutoEllipsis = True
+        Me.Label21.AutoSize = True
+        Me.Label21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label21.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(4, 73)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(40, 26)
+        Me.Label21.TabIndex = 9
+        Me.Label21.Text = "NM"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label20
+        '
+        Me.Label20.AutoEllipsis = True
+        Me.Label20.AutoSize = True
+        Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label20.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(168, 49)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(65, 23)
+        Me.Label20.TabIndex = 8
+        Me.Label20.Text = "2 puntos"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label19
+        '
+        Me.Label19.AutoEllipsis = True
+        Me.Label19.AutoSize = True
+        Me.Label19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label19.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(51, 49)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(110, 23)
+        Me.Label19.TabIndex = 7
+        Me.Label19.Text = "Bueno"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label18
+        '
+        Me.Label18.AutoEllipsis = True
+        Me.Label18.AutoSize = True
+        Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label18.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(4, 49)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(40, 23)
+        Me.Label18.TabIndex = 6
+        Me.Label18.Text = "B"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label17
+        '
+        Me.Label17.AutoEllipsis = True
+        Me.Label17.AutoSize = True
+        Me.Label17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label17.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(168, 25)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(65, 23)
+        Me.Label17.TabIndex = 5
+        Me.Label17.Text = "3 puntos"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label16
+        '
+        Me.Label16.AutoEllipsis = True
+        Me.Label16.AutoSize = True
+        Me.Label16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label16.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(51, 25)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(110, 23)
+        Me.Label16.TabIndex = 4
+        Me.Label16.Text = "Muy bueno"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label15
+        '
+        Me.Label15.AutoEllipsis = True
+        Me.Label15.AutoSize = True
+        Me.Label15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label15.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(4, 25)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(40, 23)
+        Me.Label15.TabIndex = 3
+        Me.Label15.Text = "MB"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label14
+        '
+        Me.Label14.AutoEllipsis = True
+        Me.Label14.AutoSize = True
+        Me.Label14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label14.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(168, 1)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(65, 23)
+        Me.Label14.TabIndex = 2
+        Me.Label14.Text = "4 puntos"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label13
+        '
+        Me.Label13.AutoEllipsis = True
+        Me.Label13.AutoSize = True
+        Me.Label13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label13.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(51, 1)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(110, 23)
+        Me.Label13.TabIndex = 1
+        Me.Label13.Text = "Excelente"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label12
+        '
+        Me.Label12.AutoEllipsis = True
+        Me.Label12.AutoSize = True
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label12.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(4, 1)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(40, 23)
+        Me.Label12.TabIndex = 0
+        Me.Label12.Text = "EX"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btnBack1
         '
-        Me.btnBack1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBack1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnBack1.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnBack1.FlatAppearance.BorderSize = 2
         Me.btnBack1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -557,25 +804,9 @@ Partial Class EncuestaView
         Me.btnBack1.Location = New System.Drawing.Point(11, 543)
         Me.btnBack1.Name = "btnBack1"
         Me.btnBack1.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack1.TabIndex = 15
+        Me.btnBack1.TabIndex = 8
         Me.btnBack1.Text = "Regresar"
         Me.btnBack1.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoEllipsis = True
-        Me.Label8.BackColor = System.Drawing.Color.AliceBlue
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(270, 467)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label8.Size = New System.Drawing.Size(222, 108)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "EX    = Excelente             /  4 puntos, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MB  = Muy bueno           /  3 punto" &
-    "s, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B      = Bueno                   /  2 puntos," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NM  = Necesita mejorar  /  1" &
-    " puntos."
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnContinuar1
         '
@@ -588,7 +819,7 @@ Partial Class EncuestaView
         Me.btnContinuar1.Location = New System.Drawing.Point(629, 543)
         Me.btnContinuar1.Name = "btnContinuar1"
         Me.btnContinuar1.Size = New System.Drawing.Size(129, 32)
-        Me.btnContinuar1.TabIndex = 0
+        Me.btnContinuar1.TabIndex = 7
         Me.btnContinuar1.Text = "Continuar"
         Me.btnContinuar1.UseVisualStyleBackColor = True
         '
@@ -608,6 +839,8 @@ Partial Class EncuestaView
         '
         'TableLayoutPanel1
         '
+        Me.TableLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
@@ -621,7 +854,7 @@ Partial Class EncuestaView
         Me.TableLayoutPanel1.Controls.Add(Me.pn4, 2, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.pn3, 2, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.pn2, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Panel1, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.pn1, 2, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lbPregunta1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lb1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lb2, 0, 1)
@@ -646,6 +879,7 @@ Partial Class EncuestaView
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(754, 409)
         Me.TableLayoutPanel1.TabIndex = 0
         '
@@ -659,7 +893,7 @@ Partial Class EncuestaView
         Me.pn7.Location = New System.Drawing.Point(567, 351)
         Me.pn7.Name = "pn7"
         Me.pn7.Size = New System.Drawing.Size(184, 55)
-        Me.pn7.TabIndex = 5
+        Me.pn7.TabIndex = 6
         '
         'rbNM7
         '
@@ -719,7 +953,7 @@ Partial Class EncuestaView
         Me.pn6.Location = New System.Drawing.Point(567, 293)
         Me.pn6.Name = "pn6"
         Me.pn6.Size = New System.Drawing.Size(184, 52)
-        Me.pn6.TabIndex = 4
+        Me.pn6.TabIndex = 5
         '
         'rbNM6
         '
@@ -779,7 +1013,7 @@ Partial Class EncuestaView
         Me.pn5.Location = New System.Drawing.Point(567, 235)
         Me.pn5.Name = "pn5"
         Me.pn5.Size = New System.Drawing.Size(184, 52)
-        Me.pn5.TabIndex = 3
+        Me.pn5.TabIndex = 4
         '
         'rbNM5
         '
@@ -839,7 +1073,7 @@ Partial Class EncuestaView
         Me.pn4.Location = New System.Drawing.Point(567, 177)
         Me.pn4.Name = "pn4"
         Me.pn4.Size = New System.Drawing.Size(184, 52)
-        Me.pn4.TabIndex = 2
+        Me.pn4.TabIndex = 3
         '
         'rbNM4
         '
@@ -899,7 +1133,7 @@ Partial Class EncuestaView
         Me.pn3.Location = New System.Drawing.Point(567, 119)
         Me.pn3.Name = "pn3"
         Me.pn3.Size = New System.Drawing.Size(184, 52)
-        Me.pn3.TabIndex = 1
+        Me.pn3.TabIndex = 2
         '
         'rbNM3
         '
@@ -959,7 +1193,7 @@ Partial Class EncuestaView
         Me.pn2.Location = New System.Drawing.Point(567, 61)
         Me.pn2.Name = "pn2"
         Me.pn2.Size = New System.Drawing.Size(184, 52)
-        Me.pn2.TabIndex = 0
+        Me.pn2.TabIndex = 1
         '
         'rbNM2
         '
@@ -1009,19 +1243,6 @@ Partial Class EncuestaView
         Me.rbEX2.Text = "EX"
         Me.rbEX2.UseVisualStyleBackColor = True
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.pn1)
-        Me.Panel1.Controls.Add(Me.RadioButton4)
-        Me.Panel1.Controls.Add(Me.RadioButton3)
-        Me.Panel1.Controls.Add(Me.RadioButton2)
-        Me.Panel1.Controls.Add(Me.RadioButton1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(567, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(184, 52)
-        Me.Panel1.TabIndex = 20
-        '
         'pn1
         '
         Me.pn1.Controls.Add(Me.rbNM1)
@@ -1029,7 +1250,7 @@ Partial Class EncuestaView
         Me.pn1.Controls.Add(Me.rbMB1)
         Me.pn1.Controls.Add(Me.rbEX1)
         Me.pn1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pn1.Location = New System.Drawing.Point(0, 0)
+        Me.pn1.Location = New System.Drawing.Point(567, 3)
         Me.pn1.Name = "pn1"
         Me.pn1.Size = New System.Drawing.Size(184, 52)
         Me.pn1.TabIndex = 0
@@ -1081,54 +1302,6 @@ Partial Class EncuestaView
         Me.rbEX1.TabStop = True
         Me.rbEX1.Text = "EX"
         Me.rbEX1.UseVisualStyleBackColor = True
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton4.Location = New System.Drawing.Point(136, 17)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(43, 19)
-        Me.RadioButton4.TabIndex = 22
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "NM"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton3.Location = New System.Drawing.Point(97, 18)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(33, 19)
-        Me.RadioButton3.TabIndex = 21
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "B"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(49, 17)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(42, 19)
-        Me.RadioButton2.TabIndex = 20
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "MB"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(3, 17)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(40, 19)
-        Me.RadioButton1.TabIndex = 19
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "EX"
-        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'lbPregunta1
         '
@@ -1331,8 +1504,8 @@ Partial Class EncuestaView
         '
         Me.TabPage2.AutoScroll = True
         Me.TabPage2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.TabPage2.Controls.Add(Me.tableCalificacion2)
         Me.TabPage2.Controls.Add(Me.btnBack2)
-        Me.TabPage2.Controls.Add(Me.Label9)
         Me.TabPage2.Controls.Add(Me.GroupBox3)
         Me.TabPage2.Controls.Add(Me.btnContinuar2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 24)
@@ -1342,9 +1515,197 @@ Partial Class EncuestaView
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "ÁREA ESPECÍFICA"
         '
+        'tableCalificacion2
+        '
+        Me.tableCalificacion2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tableCalificacion2.BackColor = System.Drawing.Color.AliceBlue
+        Me.tableCalificacion2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.tableCalificacion2.ColumnCount = 3
+        Me.tableCalificacion2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tableCalificacion2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tableCalificacion2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.tableCalificacion2.Controls.Add(Me.Label8, 2, 3)
+        Me.tableCalificacion2.Controls.Add(Me.Label9, 1, 3)
+        Me.tableCalificacion2.Controls.Add(Me.Label31, 0, 3)
+        Me.tableCalificacion2.Controls.Add(Me.Label32, 2, 2)
+        Me.tableCalificacion2.Controls.Add(Me.Label33, 1, 2)
+        Me.tableCalificacion2.Controls.Add(Me.Label34, 0, 2)
+        Me.tableCalificacion2.Controls.Add(Me.Label35, 2, 1)
+        Me.tableCalificacion2.Controls.Add(Me.Label36, 1, 1)
+        Me.tableCalificacion2.Controls.Add(Me.Label44, 0, 1)
+        Me.tableCalificacion2.Controls.Add(Me.Label45, 2, 0)
+        Me.tableCalificacion2.Controls.Add(Me.Label46, 1, 0)
+        Me.tableCalificacion2.Controls.Add(Me.Label47, 0, 0)
+        Me.tableCalificacion2.Location = New System.Drawing.Point(257, 475)
+        Me.tableCalificacion2.Name = "tableCalificacion2"
+        Me.tableCalificacion2.RowCount = 4
+        Me.tableCalificacion2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion2.Size = New System.Drawing.Size(237, 100)
+        Me.tableCalificacion2.TabIndex = 16
+        '
+        'Label8
+        '
+        Me.Label8.AutoEllipsis = True
+        Me.Label8.AutoSize = True
+        Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(168, 73)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 26)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "1 punto"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label9
+        '
+        Me.Label9.AutoEllipsis = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(51, 73)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(110, 26)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "Necesita mejorar"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label31
+        '
+        Me.Label31.AutoEllipsis = True
+        Me.Label31.AutoSize = True
+        Me.Label31.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label31.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(4, 73)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(40, 26)
+        Me.Label31.TabIndex = 9
+        Me.Label31.Text = "NM"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label32
+        '
+        Me.Label32.AutoEllipsis = True
+        Me.Label32.AutoSize = True
+        Me.Label32.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label32.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(168, 49)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(65, 23)
+        Me.Label32.TabIndex = 8
+        Me.Label32.Text = "2 puntos"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label33
+        '
+        Me.Label33.AutoEllipsis = True
+        Me.Label33.AutoSize = True
+        Me.Label33.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label33.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Location = New System.Drawing.Point(51, 49)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(110, 23)
+        Me.Label33.TabIndex = 7
+        Me.Label33.Text = "Bueno"
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label34
+        '
+        Me.Label34.AutoEllipsis = True
+        Me.Label34.AutoSize = True
+        Me.Label34.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label34.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.Location = New System.Drawing.Point(4, 49)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(40, 23)
+        Me.Label34.TabIndex = 6
+        Me.Label34.Text = "B"
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label35
+        '
+        Me.Label35.AutoEllipsis = True
+        Me.Label35.AutoSize = True
+        Me.Label35.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label35.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Location = New System.Drawing.Point(168, 25)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(65, 23)
+        Me.Label35.TabIndex = 5
+        Me.Label35.Text = "3 puntos"
+        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label36
+        '
+        Me.Label36.AutoEllipsis = True
+        Me.Label36.AutoSize = True
+        Me.Label36.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label36.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Location = New System.Drawing.Point(51, 25)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(110, 23)
+        Me.Label36.TabIndex = 4
+        Me.Label36.Text = "Muy bueno"
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label44
+        '
+        Me.Label44.AutoEllipsis = True
+        Me.Label44.AutoSize = True
+        Me.Label44.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label44.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(4, 25)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(40, 23)
+        Me.Label44.TabIndex = 3
+        Me.Label44.Text = "MB"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label45
+        '
+        Me.Label45.AutoEllipsis = True
+        Me.Label45.AutoSize = True
+        Me.Label45.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label45.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(168, 1)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(65, 23)
+        Me.Label45.TabIndex = 2
+        Me.Label45.Text = "4 puntos"
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label46
+        '
+        Me.Label46.AutoEllipsis = True
+        Me.Label46.AutoSize = True
+        Me.Label46.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label46.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(51, 1)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(110, 23)
+        Me.Label46.TabIndex = 1
+        Me.Label46.Text = "Excelente"
+        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label47
+        '
+        Me.Label47.AutoEllipsis = True
+        Me.Label47.AutoSize = True
+        Me.Label47.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label47.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.Location = New System.Drawing.Point(4, 1)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(40, 23)
+        Me.Label47.TabIndex = 0
+        Me.Label47.Text = "EX"
+        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btnBack2
         '
-        Me.btnBack2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBack2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnBack2.FlatAppearance.BorderSize = 2
         Me.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -1353,25 +1714,9 @@ Partial Class EncuestaView
         Me.btnBack2.Location = New System.Drawing.Point(11, 543)
         Me.btnBack2.Name = "btnBack2"
         Me.btnBack2.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack2.TabIndex = 16
+        Me.btnBack2.TabIndex = 1
         Me.btnBack2.Text = "Regresar"
         Me.btnBack2.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoEllipsis = True
-        Me.Label9.BackColor = System.Drawing.Color.AliceBlue
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label9.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(272, 470)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label9.Size = New System.Drawing.Size(222, 108)
-        Me.Label9.TabIndex = 15
-        Me.Label9.Text = "EX    = Excelente             /  4 puntos, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MB  = Muy bueno           /  3 punto" &
-    "s, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B      = Bueno                   /  2 puntos," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NM  = Necesita mejorar  /  1" &
-    " puntos."
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GroupBox3
         '
@@ -1389,6 +1734,8 @@ Partial Class EncuestaView
         '
         'TableLayoutPanel2
         '
+        Me.TableLayoutPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
@@ -1400,7 +1747,7 @@ Partial Class EncuestaView
         Me.TableLayoutPanel2.Controls.Add(Me.Panel12, 2, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel13, 2, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel14, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Panel15, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.pn8, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.lbPregunta8, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label23, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label24, 0, 1)
@@ -1432,7 +1779,7 @@ Partial Class EncuestaView
         Me.Panel11.Location = New System.Drawing.Point(567, 327)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(184, 79)
-        Me.Panel11.TabIndex = 3
+        Me.Panel11.TabIndex = 4
         '
         'rbNM12
         '
@@ -1492,7 +1839,7 @@ Partial Class EncuestaView
         Me.Panel12.Location = New System.Drawing.Point(567, 246)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(184, 75)
-        Me.Panel12.TabIndex = 2
+        Me.Panel12.TabIndex = 3
         '
         'rbNM11
         '
@@ -1552,7 +1899,7 @@ Partial Class EncuestaView
         Me.Panel13.Location = New System.Drawing.Point(567, 165)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(184, 75)
-        Me.Panel13.TabIndex = 1
+        Me.Panel13.TabIndex = 2
         '
         'rbNM10
         '
@@ -1612,7 +1959,7 @@ Partial Class EncuestaView
         Me.Panel14.Location = New System.Drawing.Point(567, 84)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(184, 75)
-        Me.Panel14.TabIndex = 0
+        Me.Panel14.TabIndex = 1
         '
         'rbNM9
         '
@@ -1662,30 +2009,17 @@ Partial Class EncuestaView
         Me.rbEX9.Text = "EX"
         Me.rbEX9.UseVisualStyleBackColor = True
         '
-        'Panel15
+        'pn8
         '
-        Me.Panel15.Controls.Add(Me.Panel16)
-        Me.Panel15.Controls.Add(Me.RadioButton61)
-        Me.Panel15.Controls.Add(Me.RadioButton62)
-        Me.Panel15.Controls.Add(Me.RadioButton63)
-        Me.Panel15.Controls.Add(Me.RadioButton64)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel15.Location = New System.Drawing.Point(567, 3)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(184, 75)
-        Me.Panel15.TabIndex = 20
-        '
-        'Panel16
-        '
-        Me.Panel16.Controls.Add(Me.rbNM8)
-        Me.Panel16.Controls.Add(Me.rbB8)
-        Me.Panel16.Controls.Add(Me.rbMB8)
-        Me.Panel16.Controls.Add(Me.rbEX8)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(0, 0)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(184, 75)
-        Me.Panel16.TabIndex = 0
+        Me.pn8.Controls.Add(Me.rbNM8)
+        Me.pn8.Controls.Add(Me.rbB8)
+        Me.pn8.Controls.Add(Me.rbMB8)
+        Me.pn8.Controls.Add(Me.rbEX8)
+        Me.pn8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pn8.Location = New System.Drawing.Point(567, 3)
+        Me.pn8.Name = "pn8"
+        Me.pn8.Size = New System.Drawing.Size(184, 75)
+        Me.pn8.TabIndex = 0
         '
         'rbNM8
         '
@@ -1734,54 +2068,6 @@ Partial Class EncuestaView
         Me.rbEX8.TabStop = True
         Me.rbEX8.Text = "EX"
         Me.rbEX8.UseVisualStyleBackColor = True
-        '
-        'RadioButton61
-        '
-        Me.RadioButton61.AutoSize = True
-        Me.RadioButton61.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton61.Location = New System.Drawing.Point(136, 17)
-        Me.RadioButton61.Name = "RadioButton61"
-        Me.RadioButton61.Size = New System.Drawing.Size(43, 19)
-        Me.RadioButton61.TabIndex = 22
-        Me.RadioButton61.TabStop = True
-        Me.RadioButton61.Text = "NM"
-        Me.RadioButton61.UseVisualStyleBackColor = True
-        '
-        'RadioButton62
-        '
-        Me.RadioButton62.AutoSize = True
-        Me.RadioButton62.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton62.Location = New System.Drawing.Point(97, 18)
-        Me.RadioButton62.Name = "RadioButton62"
-        Me.RadioButton62.Size = New System.Drawing.Size(33, 19)
-        Me.RadioButton62.TabIndex = 21
-        Me.RadioButton62.TabStop = True
-        Me.RadioButton62.Text = "B"
-        Me.RadioButton62.UseVisualStyleBackColor = True
-        '
-        'RadioButton63
-        '
-        Me.RadioButton63.AutoSize = True
-        Me.RadioButton63.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton63.Location = New System.Drawing.Point(49, 17)
-        Me.RadioButton63.Name = "RadioButton63"
-        Me.RadioButton63.Size = New System.Drawing.Size(42, 19)
-        Me.RadioButton63.TabIndex = 20
-        Me.RadioButton63.TabStop = True
-        Me.RadioButton63.Text = "MB"
-        Me.RadioButton63.UseVisualStyleBackColor = True
-        '
-        'RadioButton64
-        '
-        Me.RadioButton64.AutoSize = True
-        Me.RadioButton64.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton64.Location = New System.Drawing.Point(3, 17)
-        Me.RadioButton64.Name = "RadioButton64"
-        Me.RadioButton64.Size = New System.Drawing.Size(40, 19)
-        Me.RadioButton64.TabIndex = 19
-        Me.RadioButton64.TabStop = True
-        Me.RadioButton64.Text = "EX"
-        Me.RadioButton64.UseVisualStyleBackColor = True
         '
         'lbPregunta8
         '
@@ -1929,8 +2215,7 @@ Partial Class EncuestaView
         '
         'btnContinuar2
         '
-        Me.btnContinuar2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnContinuar2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnContinuar2.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnContinuar2.FlatAppearance.BorderSize = 2
         Me.btnContinuar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -1947,8 +2232,8 @@ Partial Class EncuestaView
         '
         Me.TabPage3.AutoScroll = True
         Me.TabPage3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.TabPage3.Controls.Add(Me.tableCalificacion3)
         Me.TabPage3.Controls.Add(Me.btnBack3)
-        Me.TabPage3.Controls.Add(Me.Label10)
         Me.TabPage3.Controls.Add(Me.GroupBox4)
         Me.TabPage3.Controls.Add(Me.btnContinuar3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 24)
@@ -1958,9 +2243,197 @@ Partial Class EncuestaView
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "DIDÁCTICA ANDRAGÓGICA"
         '
+        'tableCalificacion3
+        '
+        Me.tableCalificacion3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tableCalificacion3.BackColor = System.Drawing.Color.AliceBlue
+        Me.tableCalificacion3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.tableCalificacion3.ColumnCount = 3
+        Me.tableCalificacion3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.tableCalificacion3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.tableCalificacion3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.tableCalificacion3.Controls.Add(Me.Label10, 2, 3)
+        Me.tableCalificacion3.Controls.Add(Me.Label48, 1, 3)
+        Me.tableCalificacion3.Controls.Add(Me.Label49, 0, 3)
+        Me.tableCalificacion3.Controls.Add(Me.Label50, 2, 2)
+        Me.tableCalificacion3.Controls.Add(Me.Label56, 1, 2)
+        Me.tableCalificacion3.Controls.Add(Me.Label57, 0, 2)
+        Me.tableCalificacion3.Controls.Add(Me.Label58, 2, 1)
+        Me.tableCalificacion3.Controls.Add(Me.Label59, 1, 1)
+        Me.tableCalificacion3.Controls.Add(Me.Label60, 0, 1)
+        Me.tableCalificacion3.Controls.Add(Me.Label61, 2, 0)
+        Me.tableCalificacion3.Controls.Add(Me.Label62, 1, 0)
+        Me.tableCalificacion3.Controls.Add(Me.Label63, 0, 0)
+        Me.tableCalificacion3.Location = New System.Drawing.Point(270, 475)
+        Me.tableCalificacion3.Name = "tableCalificacion3"
+        Me.tableCalificacion3.RowCount = 4
+        Me.tableCalificacion3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.tableCalificacion3.Size = New System.Drawing.Size(237, 100)
+        Me.tableCalificacion3.TabIndex = 16
+        '
+        'Label10
+        '
+        Me.Label10.AutoEllipsis = True
+        Me.Label10.AutoSize = True
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label10.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(168, 73)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(65, 26)
+        Me.Label10.TabIndex = 11
+        Me.Label10.Text = "1 punto"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label48
+        '
+        Me.Label48.AutoEllipsis = True
+        Me.Label48.AutoSize = True
+        Me.Label48.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label48.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label48.Location = New System.Drawing.Point(51, 73)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(110, 26)
+        Me.Label48.TabIndex = 10
+        Me.Label48.Text = "Necesita mejorar"
+        Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label49
+        '
+        Me.Label49.AutoEllipsis = True
+        Me.Label49.AutoSize = True
+        Me.Label49.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label49.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.Location = New System.Drawing.Point(4, 73)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(40, 26)
+        Me.Label49.TabIndex = 9
+        Me.Label49.Text = "NM"
+        Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label50
+        '
+        Me.Label50.AutoEllipsis = True
+        Me.Label50.AutoSize = True
+        Me.Label50.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label50.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label50.Location = New System.Drawing.Point(168, 49)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(65, 23)
+        Me.Label50.TabIndex = 8
+        Me.Label50.Text = "2 puntos"
+        Me.Label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label56
+        '
+        Me.Label56.AutoEllipsis = True
+        Me.Label56.AutoSize = True
+        Me.Label56.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label56.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label56.Location = New System.Drawing.Point(51, 49)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(110, 23)
+        Me.Label56.TabIndex = 7
+        Me.Label56.Text = "Bueno"
+        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label57
+        '
+        Me.Label57.AutoEllipsis = True
+        Me.Label57.AutoSize = True
+        Me.Label57.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label57.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.Location = New System.Drawing.Point(4, 49)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(40, 23)
+        Me.Label57.TabIndex = 6
+        Me.Label57.Text = "B"
+        Me.Label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label58
+        '
+        Me.Label58.AutoEllipsis = True
+        Me.Label58.AutoSize = True
+        Me.Label58.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label58.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.Location = New System.Drawing.Point(168, 25)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(65, 23)
+        Me.Label58.TabIndex = 5
+        Me.Label58.Text = "3 puntos"
+        Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label59
+        '
+        Me.Label59.AutoEllipsis = True
+        Me.Label59.AutoSize = True
+        Me.Label59.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label59.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.Location = New System.Drawing.Point(51, 25)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(110, 23)
+        Me.Label59.TabIndex = 4
+        Me.Label59.Text = "Muy bueno"
+        Me.Label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label60
+        '
+        Me.Label60.AutoEllipsis = True
+        Me.Label60.AutoSize = True
+        Me.Label60.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label60.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(4, 25)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(40, 23)
+        Me.Label60.TabIndex = 3
+        Me.Label60.Text = "MB"
+        Me.Label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label61
+        '
+        Me.Label61.AutoEllipsis = True
+        Me.Label61.AutoSize = True
+        Me.Label61.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label61.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(168, 1)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(65, 23)
+        Me.Label61.TabIndex = 2
+        Me.Label61.Text = "4 puntos"
+        Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label62
+        '
+        Me.Label62.AutoEllipsis = True
+        Me.Label62.AutoSize = True
+        Me.Label62.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label62.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.Location = New System.Drawing.Point(51, 1)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(110, 23)
+        Me.Label62.TabIndex = 1
+        Me.Label62.Text = "Excelente"
+        Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label63
+        '
+        Me.Label63.AutoEllipsis = True
+        Me.Label63.AutoSize = True
+        Me.Label63.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label63.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(4, 1)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(40, 23)
+        Me.Label63.TabIndex = 0
+        Me.Label63.Text = "EX"
+        Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btnBack3
         '
-        Me.btnBack3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBack3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnBack3.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnBack3.FlatAppearance.BorderSize = 2
         Me.btnBack3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -1969,25 +2442,9 @@ Partial Class EncuestaView
         Me.btnBack3.Location = New System.Drawing.Point(8, 543)
         Me.btnBack3.Name = "btnBack3"
         Me.btnBack3.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack3.TabIndex = 16
+        Me.btnBack3.TabIndex = 1
         Me.btnBack3.Text = "Regresar"
         Me.btnBack3.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoEllipsis = True
-        Me.Label10.BackColor = System.Drawing.Color.AliceBlue
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label10.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(279, 470)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label10.Size = New System.Drawing.Size(222, 108)
-        Me.Label10.TabIndex = 15
-        Me.Label10.Text = "EX    = Excelente             /  4 puntos, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MB  = Muy bueno           /  3 punto" &
-    "s, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B      = Bueno                   /  2 puntos," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NM  = Necesita mejorar  /  1" &
-    " puntos."
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GroupBox4
         '
@@ -2005,6 +2462,8 @@ Partial Class EncuestaView
         '
         'TableLayoutPanel3
         '
+        Me.TableLayoutPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
@@ -2016,7 +2475,7 @@ Partial Class EncuestaView
         Me.TableLayoutPanel3.Controls.Add(Me.Panel20, 2, 3)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel21, 2, 2)
         Me.TableLayoutPanel3.Controls.Add(Me.Panel22, 2, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.Panel23, 2, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.pn13, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.lbPregunta13, 1, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label37, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label38, 0, 1)
@@ -2075,7 +2534,7 @@ Partial Class EncuestaView
         Me.Panel17.Location = New System.Drawing.Point(567, 273)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(184, 39)
-        Me.Panel17.TabIndex = 26
+        Me.Panel17.TabIndex = 6
         '
         'rbNM19
         '
@@ -2135,7 +2594,7 @@ Partial Class EncuestaView
         Me.Panel18.Location = New System.Drawing.Point(567, 228)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(184, 39)
-        Me.Panel18.TabIndex = 25
+        Me.Panel18.TabIndex = 5
         '
         'rbNM18
         '
@@ -2195,7 +2654,7 @@ Partial Class EncuestaView
         Me.Panel19.Location = New System.Drawing.Point(567, 183)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(184, 39)
-        Me.Panel19.TabIndex = 24
+        Me.Panel19.TabIndex = 4
         '
         'rbNM17
         '
@@ -2255,7 +2714,7 @@ Partial Class EncuestaView
         Me.Panel20.Location = New System.Drawing.Point(567, 138)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(184, 39)
-        Me.Panel20.TabIndex = 23
+        Me.Panel20.TabIndex = 3
         '
         'rbNM16
         '
@@ -2315,7 +2774,7 @@ Partial Class EncuestaView
         Me.Panel21.Location = New System.Drawing.Point(567, 93)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(184, 39)
-        Me.Panel21.TabIndex = 22
+        Me.Panel21.TabIndex = 2
         '
         'rbNM15
         '
@@ -2375,7 +2834,7 @@ Partial Class EncuestaView
         Me.Panel22.Location = New System.Drawing.Point(567, 48)
         Me.Panel22.Name = "Panel22"
         Me.Panel22.Size = New System.Drawing.Size(184, 39)
-        Me.Panel22.TabIndex = 21
+        Me.Panel22.TabIndex = 1
         '
         'rbNM14
         '
@@ -2425,30 +2884,17 @@ Partial Class EncuestaView
         Me.rbEX14.Text = "EX"
         Me.rbEX14.UseVisualStyleBackColor = True
         '
-        'Panel23
+        'pn13
         '
-        Me.Panel23.Controls.Add(Me.Panel24)
-        Me.Panel23.Controls.Add(Me.RadioButton93)
-        Me.Panel23.Controls.Add(Me.RadioButton94)
-        Me.Panel23.Controls.Add(Me.RadioButton95)
-        Me.Panel23.Controls.Add(Me.RadioButton96)
-        Me.Panel23.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel23.Location = New System.Drawing.Point(567, 3)
-        Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(184, 39)
-        Me.Panel23.TabIndex = 20
-        '
-        'Panel24
-        '
-        Me.Panel24.Controls.Add(Me.rbNM13)
-        Me.Panel24.Controls.Add(Me.rbB13)
-        Me.Panel24.Controls.Add(Me.rbMB13)
-        Me.Panel24.Controls.Add(Me.rbEX13)
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(0, 0)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(184, 39)
-        Me.Panel24.TabIndex = 23
+        Me.pn13.Controls.Add(Me.rbNM13)
+        Me.pn13.Controls.Add(Me.rbB13)
+        Me.pn13.Controls.Add(Me.rbMB13)
+        Me.pn13.Controls.Add(Me.rbEX13)
+        Me.pn13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pn13.Location = New System.Drawing.Point(567, 3)
+        Me.pn13.Name = "pn13"
+        Me.pn13.Size = New System.Drawing.Size(184, 39)
+        Me.pn13.TabIndex = 0
         '
         'rbNM13
         '
@@ -2497,54 +2943,6 @@ Partial Class EncuestaView
         Me.rbEX13.TabStop = True
         Me.rbEX13.Text = "EX"
         Me.rbEX13.UseVisualStyleBackColor = True
-        '
-        'RadioButton93
-        '
-        Me.RadioButton93.AutoSize = True
-        Me.RadioButton93.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton93.Location = New System.Drawing.Point(136, 17)
-        Me.RadioButton93.Name = "RadioButton93"
-        Me.RadioButton93.Size = New System.Drawing.Size(43, 19)
-        Me.RadioButton93.TabIndex = 22
-        Me.RadioButton93.TabStop = True
-        Me.RadioButton93.Text = "NM"
-        Me.RadioButton93.UseVisualStyleBackColor = True
-        '
-        'RadioButton94
-        '
-        Me.RadioButton94.AutoSize = True
-        Me.RadioButton94.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton94.Location = New System.Drawing.Point(97, 18)
-        Me.RadioButton94.Name = "RadioButton94"
-        Me.RadioButton94.Size = New System.Drawing.Size(33, 19)
-        Me.RadioButton94.TabIndex = 21
-        Me.RadioButton94.TabStop = True
-        Me.RadioButton94.Text = "B"
-        Me.RadioButton94.UseVisualStyleBackColor = True
-        '
-        'RadioButton95
-        '
-        Me.RadioButton95.AutoSize = True
-        Me.RadioButton95.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton95.Location = New System.Drawing.Point(49, 17)
-        Me.RadioButton95.Name = "RadioButton95"
-        Me.RadioButton95.Size = New System.Drawing.Size(42, 19)
-        Me.RadioButton95.TabIndex = 20
-        Me.RadioButton95.TabStop = True
-        Me.RadioButton95.Text = "MB"
-        Me.RadioButton95.UseVisualStyleBackColor = True
-        '
-        'RadioButton96
-        '
-        Me.RadioButton96.AutoSize = True
-        Me.RadioButton96.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton96.Location = New System.Drawing.Point(3, 17)
-        Me.RadioButton96.Name = "RadioButton96"
-        Me.RadioButton96.Size = New System.Drawing.Size(40, 19)
-        Me.RadioButton96.TabIndex = 19
-        Me.RadioButton96.TabStop = True
-        Me.RadioButton96.Text = "EX"
-        Me.RadioButton96.UseVisualStyleBackColor = True
         '
         'lbPregunta13
         '
@@ -2794,7 +3192,7 @@ Partial Class EncuestaView
         Me.Panel9.Location = New System.Drawing.Point(567, 318)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(184, 39)
-        Me.Panel9.TabIndex = 31
+        Me.Panel9.TabIndex = 7
         '
         'rbNM20
         '
@@ -2853,7 +3251,7 @@ Partial Class EncuestaView
         Me.Panel10.Location = New System.Drawing.Point(567, 363)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(184, 39)
-        Me.Panel10.TabIndex = 32
+        Me.Panel10.TabIndex = 8
         '
         'rbNM21
         '
@@ -2922,8 +3320,8 @@ Partial Class EncuestaView
         '
         Me.TabPage4.AutoScroll = True
         Me.TabPage4.BackColor = System.Drawing.Color.RoyalBlue
+        Me.TabPage4.Controls.Add(Me.TableLayoutPanel6)
         Me.TabPage4.Controls.Add(Me.btnBack4)
-        Me.TabPage4.Controls.Add(Me.Label11)
         Me.TabPage4.Controls.Add(Me.GroupBox5)
         Me.TabPage4.Controls.Add(Me.btnFinalizar)
         Me.TabPage4.Location = New System.Drawing.Point(4, 24)
@@ -2933,9 +3331,197 @@ Partial Class EncuestaView
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "VALORES"
         '
+        'TableLayoutPanel6
+        '
+        Me.TableLayoutPanel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel6.BackColor = System.Drawing.Color.AliceBlue
+        Me.TableLayoutPanel6.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
+        Me.TableLayoutPanel6.ColumnCount = 3
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
+        Me.TableLayoutPanel6.Controls.Add(Me.Label11, 2, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label64, 1, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label65, 0, 3)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label66, 2, 2)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label67, 1, 2)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label68, 0, 2)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label69, 2, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label70, 1, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label71, 0, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label72, 2, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label73, 1, 0)
+        Me.TableLayoutPanel6.Controls.Add(Me.Label74, 0, 0)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(270, 475)
+        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
+        Me.TableLayoutPanel6.RowCount = 4
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(237, 100)
+        Me.TableLayoutPanel6.TabIndex = 16
+        '
+        'Label11
+        '
+        Me.Label11.AutoEllipsis = True
+        Me.Label11.AutoSize = True
+        Me.Label11.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label11.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(168, 73)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(65, 26)
+        Me.Label11.TabIndex = 11
+        Me.Label11.Text = "1 punto"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label64
+        '
+        Me.Label64.AutoEllipsis = True
+        Me.Label64.AutoSize = True
+        Me.Label64.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label64.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Location = New System.Drawing.Point(51, 73)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(110, 26)
+        Me.Label64.TabIndex = 10
+        Me.Label64.Text = "Necesita mejorar"
+        Me.Label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label65
+        '
+        Me.Label65.AutoEllipsis = True
+        Me.Label65.AutoSize = True
+        Me.Label65.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label65.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label65.Location = New System.Drawing.Point(4, 73)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(40, 26)
+        Me.Label65.TabIndex = 9
+        Me.Label65.Text = "NM"
+        Me.Label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label66
+        '
+        Me.Label66.AutoEllipsis = True
+        Me.Label66.AutoSize = True
+        Me.Label66.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label66.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(168, 49)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(65, 23)
+        Me.Label66.TabIndex = 8
+        Me.Label66.Text = "2 puntos"
+        Me.Label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label67
+        '
+        Me.Label67.AutoEllipsis = True
+        Me.Label67.AutoSize = True
+        Me.Label67.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label67.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label67.Location = New System.Drawing.Point(51, 49)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(110, 23)
+        Me.Label67.TabIndex = 7
+        Me.Label67.Text = "Bueno"
+        Me.Label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label68
+        '
+        Me.Label68.AutoEllipsis = True
+        Me.Label68.AutoSize = True
+        Me.Label68.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label68.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label68.Location = New System.Drawing.Point(4, 49)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(40, 23)
+        Me.Label68.TabIndex = 6
+        Me.Label68.Text = "B"
+        Me.Label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label69
+        '
+        Me.Label69.AutoEllipsis = True
+        Me.Label69.AutoSize = True
+        Me.Label69.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label69.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label69.Location = New System.Drawing.Point(168, 25)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(65, 23)
+        Me.Label69.TabIndex = 5
+        Me.Label69.Text = "3 puntos"
+        Me.Label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label70
+        '
+        Me.Label70.AutoEllipsis = True
+        Me.Label70.AutoSize = True
+        Me.Label70.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label70.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.Location = New System.Drawing.Point(51, 25)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(110, 23)
+        Me.Label70.TabIndex = 4
+        Me.Label70.Text = "Muy bueno"
+        Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label71
+        '
+        Me.Label71.AutoEllipsis = True
+        Me.Label71.AutoSize = True
+        Me.Label71.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label71.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label71.Location = New System.Drawing.Point(4, 25)
+        Me.Label71.Name = "Label71"
+        Me.Label71.Size = New System.Drawing.Size(40, 23)
+        Me.Label71.TabIndex = 3
+        Me.Label71.Text = "MB"
+        Me.Label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label72
+        '
+        Me.Label72.AutoEllipsis = True
+        Me.Label72.AutoSize = True
+        Me.Label72.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label72.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label72.Location = New System.Drawing.Point(168, 1)
+        Me.Label72.Name = "Label72"
+        Me.Label72.Size = New System.Drawing.Size(65, 23)
+        Me.Label72.TabIndex = 2
+        Me.Label72.Text = "4 puntos"
+        Me.Label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label73
+        '
+        Me.Label73.AutoEllipsis = True
+        Me.Label73.AutoSize = True
+        Me.Label73.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label73.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.Location = New System.Drawing.Point(51, 1)
+        Me.Label73.Name = "Label73"
+        Me.Label73.Size = New System.Drawing.Size(110, 23)
+        Me.Label73.TabIndex = 1
+        Me.Label73.Text = "Excelente"
+        Me.Label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label74
+        '
+        Me.Label74.AutoEllipsis = True
+        Me.Label74.AutoSize = True
+        Me.Label74.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label74.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label74.Location = New System.Drawing.Point(4, 1)
+        Me.Label74.Name = "Label74"
+        Me.Label74.Size = New System.Drawing.Size(40, 23)
+        Me.Label74.TabIndex = 0
+        Me.Label74.Text = "EX"
+        Me.Label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btnBack4
         '
-        Me.btnBack4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBack4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnBack4.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnBack4.FlatAppearance.BorderSize = 2
         Me.btnBack4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -2944,25 +3530,9 @@ Partial Class EncuestaView
         Me.btnBack4.Location = New System.Drawing.Point(8, 543)
         Me.btnBack4.Name = "btnBack4"
         Me.btnBack4.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack4.TabIndex = 16
+        Me.btnBack4.TabIndex = 1
         Me.btnBack4.Text = "Regresar"
         Me.btnBack4.UseVisualStyleBackColor = True
-        '
-        'Label11
-        '
-        Me.Label11.AutoEllipsis = True
-        Me.Label11.BackColor = System.Drawing.Color.AliceBlue
-        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label11.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(275, 470)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label11.Size = New System.Drawing.Size(222, 108)
-        Me.Label11.TabIndex = 15
-        Me.Label11.Text = "EX    = Excelente             /  4 puntos, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MB  = Muy bueno           /  3 punto" &
-    "s, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "B      = Bueno                   /  2 puntos," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NM  = Necesita mejorar  /  1" &
-    " puntos."
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GroupBox5
         '
@@ -2982,24 +3552,30 @@ Partial Class EncuestaView
         '
         'lbTotal
         '
-        Me.lbTotal.AutoSize = True
-        Me.lbTotal.Location = New System.Drawing.Point(569, 392)
+        Me.lbTotal.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lbTotal.AutoEllipsis = True
+        Me.lbTotal.Location = New System.Drawing.Point(398, 392)
         Me.lbTotal.Name = "lbTotal"
-        Me.lbTotal.Size = New System.Drawing.Size(21, 22)
+        Me.lbTotal.Size = New System.Drawing.Size(356, 22)
         Me.lbTotal.TabIndex = 2
         Me.lbTotal.Text = "0"
+        Me.lbTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label55
         '
-        Me.Label55.AutoSize = True
-        Me.Label55.Location = New System.Drawing.Point(469, 392)
+        Me.Label55.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label55.AutoEllipsis = True
+        Me.Label55.Location = New System.Drawing.Point(10, 392)
         Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(82, 22)
+        Me.Label55.Size = New System.Drawing.Size(366, 22)
         Me.Label55.TabIndex = 1
         Me.Label55.Text = "TOTAL:"
+        Me.Label55.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'TableLayoutPanel4
         '
+        Me.TableLayoutPanel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel4.ColumnCount = 3
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.0!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.0!))
@@ -3010,7 +3586,7 @@ Partial Class EncuestaView
         Me.TableLayoutPanel4.Controls.Add(Me.pnLastStep4, 2, 3)
         Me.TableLayoutPanel4.Controls.Add(Me.pnLastStep3, 2, 2)
         Me.TableLayoutPanel4.Controls.Add(Me.pnLastStep2, 2, 1)
-        Me.TableLayoutPanel4.Controls.Add(Me.Panel31, 2, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.pn22, 2, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.lbPregunta22, 1, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label51, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label52, 0, 1)
@@ -3039,7 +3615,7 @@ Partial Class EncuestaView
         Me.pnLastStep4.Location = New System.Drawing.Point(567, 240)
         Me.pnLastStep4.Name = "pnLastStep4"
         Me.pnLastStep4.Size = New System.Drawing.Size(184, 73)
-        Me.pnLastStep4.TabIndex = 23
+        Me.pnLastStep4.TabIndex = 3
         '
         'rbNM25
         '
@@ -3099,7 +3675,7 @@ Partial Class EncuestaView
         Me.pnLastStep3.Location = New System.Drawing.Point(567, 161)
         Me.pnLastStep3.Name = "pnLastStep3"
         Me.pnLastStep3.Size = New System.Drawing.Size(184, 73)
-        Me.pnLastStep3.TabIndex = 22
+        Me.pnLastStep3.TabIndex = 2
         '
         'rbNM24
         '
@@ -3159,7 +3735,7 @@ Partial Class EncuestaView
         Me.pnLastStep2.Location = New System.Drawing.Point(567, 82)
         Me.pnLastStep2.Name = "pnLastStep2"
         Me.pnLastStep2.Size = New System.Drawing.Size(184, 73)
-        Me.pnLastStep2.TabIndex = 21
+        Me.pnLastStep2.TabIndex = 1
         '
         'rbNM23
         '
@@ -3209,36 +3785,23 @@ Partial Class EncuestaView
         Me.rbEX23.Text = "EX"
         Me.rbEX23.UseVisualStyleBackColor = True
         '
-        'Panel31
+        'pn22
         '
-        Me.Panel31.Controls.Add(Me.pnLastStep1)
-        Me.Panel31.Controls.Add(Me.RadioButton125)
-        Me.Panel31.Controls.Add(Me.RadioButton126)
-        Me.Panel31.Controls.Add(Me.RadioButton127)
-        Me.Panel31.Controls.Add(Me.RadioButton128)
-        Me.Panel31.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel31.Location = New System.Drawing.Point(567, 3)
-        Me.Panel31.Name = "Panel31"
-        Me.Panel31.Size = New System.Drawing.Size(184, 73)
-        Me.Panel31.TabIndex = 20
-        '
-        'pnLastStep1
-        '
-        Me.pnLastStep1.Controls.Add(Me.rbNM22)
-        Me.pnLastStep1.Controls.Add(Me.rbB22)
-        Me.pnLastStep1.Controls.Add(Me.rbMB22)
-        Me.pnLastStep1.Controls.Add(Me.rbEX22)
-        Me.pnLastStep1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnLastStep1.Location = New System.Drawing.Point(0, 0)
-        Me.pnLastStep1.Name = "pnLastStep1"
-        Me.pnLastStep1.Size = New System.Drawing.Size(184, 73)
-        Me.pnLastStep1.TabIndex = 23
+        Me.pn22.Controls.Add(Me.rbNM22)
+        Me.pn22.Controls.Add(Me.rbB22)
+        Me.pn22.Controls.Add(Me.rbMB22)
+        Me.pn22.Controls.Add(Me.rbEX22)
+        Me.pn22.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pn22.Location = New System.Drawing.Point(567, 3)
+        Me.pn22.Name = "pn22"
+        Me.pn22.Size = New System.Drawing.Size(184, 73)
+        Me.pn22.TabIndex = 0
         '
         'rbNM22
         '
         Me.rbNM22.AutoSize = True
         Me.rbNM22.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbNM22.Location = New System.Drawing.Point(136, 34)
+        Me.rbNM22.Location = New System.Drawing.Point(136, 17)
         Me.rbNM22.Name = "rbNM22"
         Me.rbNM22.Size = New System.Drawing.Size(43, 19)
         Me.rbNM22.TabIndex = 3
@@ -3250,7 +3813,7 @@ Partial Class EncuestaView
         '
         Me.rbB22.AutoSize = True
         Me.rbB22.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbB22.Location = New System.Drawing.Point(97, 35)
+        Me.rbB22.Location = New System.Drawing.Point(97, 18)
         Me.rbB22.Name = "rbB22"
         Me.rbB22.Size = New System.Drawing.Size(33, 19)
         Me.rbB22.TabIndex = 2
@@ -3262,7 +3825,7 @@ Partial Class EncuestaView
         '
         Me.rbMB22.AutoSize = True
         Me.rbMB22.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbMB22.Location = New System.Drawing.Point(49, 34)
+        Me.rbMB22.Location = New System.Drawing.Point(49, 17)
         Me.rbMB22.Name = "rbMB22"
         Me.rbMB22.Size = New System.Drawing.Size(42, 19)
         Me.rbMB22.TabIndex = 1
@@ -3274,61 +3837,13 @@ Partial Class EncuestaView
         '
         Me.rbEX22.AutoSize = True
         Me.rbEX22.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rbEX22.Location = New System.Drawing.Point(3, 34)
+        Me.rbEX22.Location = New System.Drawing.Point(3, 17)
         Me.rbEX22.Name = "rbEX22"
         Me.rbEX22.Size = New System.Drawing.Size(40, 19)
         Me.rbEX22.TabIndex = 0
         Me.rbEX22.TabStop = True
         Me.rbEX22.Text = "EX"
         Me.rbEX22.UseVisualStyleBackColor = True
-        '
-        'RadioButton125
-        '
-        Me.RadioButton125.AutoSize = True
-        Me.RadioButton125.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton125.Location = New System.Drawing.Point(136, 17)
-        Me.RadioButton125.Name = "RadioButton125"
-        Me.RadioButton125.Size = New System.Drawing.Size(43, 19)
-        Me.RadioButton125.TabIndex = 3
-        Me.RadioButton125.TabStop = True
-        Me.RadioButton125.Text = "NM"
-        Me.RadioButton125.UseVisualStyleBackColor = True
-        '
-        'RadioButton126
-        '
-        Me.RadioButton126.AutoSize = True
-        Me.RadioButton126.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton126.Location = New System.Drawing.Point(97, 18)
-        Me.RadioButton126.Name = "RadioButton126"
-        Me.RadioButton126.Size = New System.Drawing.Size(33, 19)
-        Me.RadioButton126.TabIndex = 2
-        Me.RadioButton126.TabStop = True
-        Me.RadioButton126.Text = "B"
-        Me.RadioButton126.UseVisualStyleBackColor = True
-        '
-        'RadioButton127
-        '
-        Me.RadioButton127.AutoSize = True
-        Me.RadioButton127.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton127.Location = New System.Drawing.Point(49, 17)
-        Me.RadioButton127.Name = "RadioButton127"
-        Me.RadioButton127.Size = New System.Drawing.Size(42, 19)
-        Me.RadioButton127.TabIndex = 1
-        Me.RadioButton127.TabStop = True
-        Me.RadioButton127.Text = "MB"
-        Me.RadioButton127.UseVisualStyleBackColor = True
-        '
-        'RadioButton128
-        '
-        Me.RadioButton128.AutoSize = True
-        Me.RadioButton128.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton128.Location = New System.Drawing.Point(3, 17)
-        Me.RadioButton128.Name = "RadioButton128"
-        Me.RadioButton128.Size = New System.Drawing.Size(40, 19)
-        Me.RadioButton128.TabIndex = 0
-        Me.RadioButton128.TabStop = True
-        Me.RadioButton128.Text = "EX"
-        Me.RadioButton128.UseVisualStyleBackColor = True
         '
         'lbPregunta22
         '
@@ -3472,7 +3987,10 @@ Partial Class EncuestaView
         Me.tabCtrlEncuesta.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
+        Me.TableLayoutPanel7.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.tableCalificacion.ResumeLayout(False)
+        Me.tableCalificacion.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
@@ -3488,11 +4006,11 @@ Partial Class EncuestaView
         Me.pn3.PerformLayout()
         Me.pn2.ResumeLayout(False)
         Me.pn2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.pn1.ResumeLayout(False)
         Me.pn1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
+        Me.tableCalificacion2.ResumeLayout(False)
+        Me.tableCalificacion2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
@@ -3504,11 +4022,11 @@ Partial Class EncuestaView
         Me.Panel13.PerformLayout()
         Me.Panel14.ResumeLayout(False)
         Me.Panel14.PerformLayout()
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel15.PerformLayout()
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel16.PerformLayout()
+        Me.pn8.ResumeLayout(False)
+        Me.pn8.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
+        Me.tableCalificacion3.ResumeLayout(False)
+        Me.tableCalificacion3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
@@ -3524,17 +4042,16 @@ Partial Class EncuestaView
         Me.Panel21.PerformLayout()
         Me.Panel22.ResumeLayout(False)
         Me.Panel22.PerformLayout()
-        Me.Panel23.ResumeLayout(False)
-        Me.Panel23.PerformLayout()
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
+        Me.pn13.ResumeLayout(False)
+        Me.pn13.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
+        Me.TableLayoutPanel6.ResumeLayout(False)
+        Me.TableLayoutPanel6.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
         Me.pnLastStep4.ResumeLayout(False)
@@ -3543,10 +4060,8 @@ Partial Class EncuestaView
         Me.pnLastStep3.PerformLayout()
         Me.pnLastStep2.ResumeLayout(False)
         Me.pnLastStep2.PerformLayout()
-        Me.Panel31.ResumeLayout(False)
-        Me.Panel31.PerformLayout()
-        Me.pnLastStep1.ResumeLayout(False)
-        Me.pnLastStep1.PerformLayout()
+        Me.pn22.ResumeLayout(False)
+        Me.pn22.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -3592,11 +4107,6 @@ Partial Class EncuestaView
     Friend WithEvents lbPregunta5 As Label
     Friend WithEvents lbPregunta6 As Label
     Friend WithEvents lbPregunta7 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents pn7 As Panel
     Friend WithEvents rbNM7 As RadioButton
     Friend WithEvents rbB7 As RadioButton
@@ -3627,11 +4137,6 @@ Partial Class EncuestaView
     Friend WithEvents rbB2 As RadioButton
     Friend WithEvents rbMB2 As RadioButton
     Friend WithEvents rbEX2 As RadioButton
-    Friend WithEvents pn1 As Panel
-    Friend WithEvents rbNM1 As RadioButton
-    Friend WithEvents rbB1 As RadioButton
-    Friend WithEvents rbMB1 As RadioButton
-    Friend WithEvents rbEX1 As RadioButton
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Panel11 As Panel
@@ -3654,16 +4159,11 @@ Partial Class EncuestaView
     Friend WithEvents rbB9 As RadioButton
     Friend WithEvents rbMB9 As RadioButton
     Friend WithEvents rbEX9 As RadioButton
-    Friend WithEvents Panel15 As Panel
-    Friend WithEvents Panel16 As Panel
+    Friend WithEvents pn8 As Panel
     Friend WithEvents rbNM8 As RadioButton
     Friend WithEvents rbB8 As RadioButton
     Friend WithEvents rbMB8 As RadioButton
     Friend WithEvents rbEX8 As RadioButton
-    Friend WithEvents RadioButton61 As RadioButton
-    Friend WithEvents RadioButton62 As RadioButton
-    Friend WithEvents RadioButton63 As RadioButton
-    Friend WithEvents RadioButton64 As RadioButton
     Friend WithEvents lbPregunta8 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
@@ -3706,16 +4206,6 @@ Partial Class EncuestaView
     Friend WithEvents rbB14 As RadioButton
     Friend WithEvents rbMB14 As RadioButton
     Friend WithEvents rbEX14 As RadioButton
-    Friend WithEvents Panel23 As Panel
-    Friend WithEvents Panel24 As Panel
-    Friend WithEvents rbNM13 As RadioButton
-    Friend WithEvents rbB13 As RadioButton
-    Friend WithEvents rbMB13 As RadioButton
-    Friend WithEvents rbEX13 As RadioButton
-    Friend WithEvents RadioButton93 As RadioButton
-    Friend WithEvents RadioButton94 As RadioButton
-    Friend WithEvents RadioButton95 As RadioButton
-    Friend WithEvents RadioButton96 As RadioButton
     Friend WithEvents lbPregunta13 As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
@@ -3747,16 +4237,11 @@ Partial Class EncuestaView
     Friend WithEvents rbB23 As RadioButton
     Friend WithEvents rbMB23 As RadioButton
     Friend WithEvents rbEX23 As RadioButton
-    Friend WithEvents Panel31 As Panel
-    Friend WithEvents pnLastStep1 As Panel
+    Friend WithEvents pn22 As Panel
     Friend WithEvents rbNM22 As RadioButton
     Friend WithEvents rbB22 As RadioButton
     Friend WithEvents rbMB22 As RadioButton
     Friend WithEvents rbEX22 As RadioButton
-    Friend WithEvents RadioButton125 As RadioButton
-    Friend WithEvents RadioButton126 As RadioButton
-    Friend WithEvents RadioButton127 As RadioButton
-    Friend WithEvents RadioButton128 As RadioButton
     Friend WithEvents lbPregunta22 As Label
     Friend WithEvents Label51 As Label
     Friend WithEvents Label52 As Label
@@ -3782,12 +4267,71 @@ Partial Class EncuestaView
     Friend WithEvents lbTotal As Label
     Friend WithEvents Label55 As Label
     Friend WithEvents lblCodigo As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
     Friend WithEvents btnBack1 As Button
     Friend WithEvents btnBack2 As Button
     Friend WithEvents btnBack3 As Button
     Friend WithEvents btnBack4 As Button
+    Friend WithEvents tableCalificacion As TableLayoutPanel
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents tableCalificacion2 As TableLayoutPanel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents Label44 As Label
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents Label47 As Label
+    Friend WithEvents tableCalificacion3 As TableLayoutPanel
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label48 As Label
+    Friend WithEvents Label49 As Label
+    Friend WithEvents Label50 As Label
+    Friend WithEvents Label56 As Label
+    Friend WithEvents Label57 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents Label59 As Label
+    Friend WithEvents Label60 As Label
+    Friend WithEvents Label61 As Label
+    Friend WithEvents Label62 As Label
+    Friend WithEvents Label63 As Label
+    Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label64 As Label
+    Friend WithEvents Label65 As Label
+    Friend WithEvents Label66 As Label
+    Friend WithEvents Label67 As Label
+    Friend WithEvents Label68 As Label
+    Friend WithEvents Label69 As Label
+    Friend WithEvents Label70 As Label
+    Friend WithEvents Label71 As Label
+    Friend WithEvents Label72 As Label
+    Friend WithEvents Label73 As Label
+    Friend WithEvents Label74 As Label
+    Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
+    Friend WithEvents pn1 As Panel
+    Friend WithEvents rbNM1 As RadioButton
+    Friend WithEvents rbB1 As RadioButton
+    Friend WithEvents rbMB1 As RadioButton
+    Friend WithEvents rbEX1 As RadioButton
+    Friend WithEvents pn13 As Panel
+    Friend WithEvents rbNM13 As RadioButton
+    Friend WithEvents rbB13 As RadioButton
+    Friend WithEvents rbMB13 As RadioButton
+    Friend WithEvents rbEX13 As RadioButton
 End Class

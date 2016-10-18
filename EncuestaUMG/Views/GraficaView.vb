@@ -12,4 +12,8 @@
     Friend Sub ShowIncompleteData()
         MessageBox.Show("¡Complete todos los campos antes de continuar!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
     End Sub
+
+    Friend Sub ShowAlert(message As String)
+        MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+    End Sub
 End Class

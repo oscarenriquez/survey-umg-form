@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAB2NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1
+        Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1
+        Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3c3B/+ecFH/l2ZE/3U0Av92NQL/djUC/3Y1
+        Av92NQL/djUC/3Y1Av92NQL/djUC/3Y1Av92NQL/djUC/3U0Av/TvrL///////////+8m4f/dTQB/3Y1
+        Av92NQL/djUC/3Y1Av92NQL/dTQB/3Y1Av92NQL/djUC/3Y1Av97PRL//v7+////////////7ufj/3Uz
+        Af92NQL/djUC/3Y1Av92NQL/djUC/7SRe/9/Qhf/hEkh/3U0Av+NVzP/2MW7//7+/v///////////9K8
+        sP91NAH/djUC/3Y1Av92NQL/djUC/3Y1Av/w+/f//Pv7//7+/v/f0Mr/+fv6/53s0f842qP/i+nJ/7jx
+        3v/n3Nb/eTkK/3Y1Av92NQL/djUC/3Y1Av92NQL/1ffr/////////////////z3apf8F0Y7/BtKP/wbS
+        j/8O05L/2Pfs/7ydif92NQH/djUC/3Y1Av92NQL/djUC/7zy3////////////+r79f8M0pD/BtKP/wbS
+        j/8G0o//BtKP/z7bpv/6+/r/kFs3/3Y1Av92NQL/djUC/3Y1Av8l15v/re/Y/7vy3/8/26f/BtKP/wbS
+        j/8G0o//BtKP/wbSj/8F0Y7/kOrL/+ba0/94OQn/djUC/3Y1Av92NQL/BtKP/wXRjv8F0Y7/BtKP/wbS
+        j/8G0o//BtKP/wbSj/8G0o//BtKP/w/Tkv/a9+3/upmF/3U0Af92NQL/djUC/wbSj/8G0o//BtKP/wbS
+        j/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//Qdyn//r6+f/Dp5b/q4Np/66IcP8G0o//BtKP/wbS
+        j/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//BtKP/xnUlv/y/Pn////////////p+vT/BtKP/wbS
+        j/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/9A3Kj/////////////////svDb/wbS
+        j/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//D9OS/9j37P///////f7+/1vg
+        s/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8G0o//BtKP/wbSj/8U1JT/XeC0/zfa
+        o/8F0Y7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
+  </data>
 </root>

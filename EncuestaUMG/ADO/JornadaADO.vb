@@ -32,8 +32,8 @@ Public Class JornadaADO
             End If
             reader.Close()
         Catch ex As Exception
-            Console.WriteLine(ex.Message)
             Console.WriteLine(ex.StackTrace)
+            Throw New Exception("JornadaADO, " & ex.Message)
         Finally
             If (connection IsNot Nothing) Then
                 connection.Close()

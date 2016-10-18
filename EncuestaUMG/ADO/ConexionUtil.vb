@@ -21,6 +21,7 @@ Module ConexionUtil
             Next
             Return command.ExecuteNonQuery
         Catch ex As Exception
+            Console.Write(ex.StackTrace)
             Throw New Exception("No fue posible realizar la transaccion, Msg: " & ex.Message)
         End Try
     End Function
@@ -34,6 +35,7 @@ Module ConexionUtil
             Next
             Return command.ExecuteReader
         Catch ex As Exception
+            Console.Write(ex.StackTrace)
             Throw New Exception("No fue posible realizar la transaccion, Msg: " & ex.Message)
         End Try
     End Function
