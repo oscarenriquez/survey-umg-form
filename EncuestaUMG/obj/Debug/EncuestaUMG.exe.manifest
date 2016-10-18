@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EncuestaUMG.exe" size="408584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EncuestaUMG.exe" size="491528">
       <assemblyIdentity name="EncuestaUMG" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zeHctofgV3adfphrsHj8WJvmf/4xxxaTd6Ibq0JWawA=</dsig:DigestValue>
+        <dsig:DigestValue>QvWnyXYgOnvv04rEsIVisUAVoIdySnkydLf7x+Ky+2Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

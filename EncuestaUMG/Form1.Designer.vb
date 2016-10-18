@@ -30,14 +30,15 @@ Partial Class Form1
         Me.CursosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JornadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GraficaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExportarArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GraficaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GraficaDocenteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GraficaCursoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WelcomeLbl = New System.Windows.Forms.Label()
         Me.btnResponder = New System.Windows.Forms.Button()
-        Me.MessageLbl = New System.Windows.Forms.Label()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -92,18 +93,11 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GraficaToolStripMenuItem, Me.ExportarArchivoToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportarArchivoToolStripMenuItem, Me.GraficaToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_card_membership
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
-        '
-        'GraficaToolStripMenuItem
-        '
-        Me.GraficaToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_pie_chart_outlined
-        Me.GraficaToolStripMenuItem.Name = "GraficaToolStripMenuItem"
-        Me.GraficaToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.GraficaToolStripMenuItem.Text = "Grafica"
         '
         'ExportarArchivoToolStripMenuItem
         '
@@ -111,6 +105,28 @@ Partial Class Form1
         Me.ExportarArchivoToolStripMenuItem.Name = "ExportarArchivoToolStripMenuItem"
         Me.ExportarArchivoToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.ExportarArchivoToolStripMenuItem.Text = "Exportar Archivo"
+        '
+        'GraficaToolStripMenuItem
+        '
+        Me.GraficaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GraficaDocenteToolStripMenuItem, Me.GraficaCursoToolStripMenuItem})
+        Me.GraficaToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_pie_chart_outlined
+        Me.GraficaToolStripMenuItem.Name = "GraficaToolStripMenuItem"
+        Me.GraficaToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.GraficaToolStripMenuItem.Text = "Dashboard"
+        '
+        'GraficaDocenteToolStripMenuItem
+        '
+        Me.GraficaDocenteToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_multiline_chart
+        Me.GraficaDocenteToolStripMenuItem.Name = "GraficaDocenteToolStripMenuItem"
+        Me.GraficaDocenteToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.GraficaDocenteToolStripMenuItem.Text = "Grafica Docente"
+        '
+        'GraficaCursoToolStripMenuItem
+        '
+        Me.GraficaCursoToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_trending_up
+        Me.GraficaCursoToolStripMenuItem.Name = "GraficaCursoToolStripMenuItem"
+        Me.GraficaCursoToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
+        Me.GraficaCursoToolStripMenuItem.Text = "Grafica Curso"
         '
         'ToolStripMenuItem1
         '
@@ -160,20 +176,6 @@ Partial Class Form1
         Me.btnResponder.Text = "¡Responder!"
         Me.btnResponder.UseVisualStyleBackColor = True
         '
-        'MessageLbl
-        '
-        Me.MessageLbl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MessageLbl.AutoEllipsis = True
-        Me.MessageLbl.Font = New System.Drawing.Font("Arial Narrow", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessageLbl.ForeColor = System.Drawing.Color.White
-        Me.MessageLbl.Location = New System.Drawing.Point(127, 195)
-        Me.MessageLbl.Name = "MessageLbl"
-        Me.MessageLbl.Size = New System.Drawing.Size(571, 93)
-        Me.MessageLbl.TabIndex = 5
-        Me.MessageLbl.Text = "En esta aplicación podrás evaluar a tus catedráticos de forma agil y eficiente, u" &
-    "nicamente debes de ingresar tu numero de carnet y listo, responde la encuesta"
-        '
         'SaveFileDialog1
         '
         Me.SaveFileDialog1.FileName = "Reporte"
@@ -184,10 +186,11 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BackgroundImage = Global.EncuestaUMG.My.Resources.Resources.LOGO_UMG_juvenil
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(784, 611)
         Me.Controls.Add(Me.WelcomeLbl)
         Me.Controls.Add(Me.btnResponder)
-        Me.Controls.Add(Me.MessageLbl)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 650)
@@ -214,7 +217,8 @@ Partial Class Form1
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WelcomeLbl As Label
     Friend WithEvents btnResponder As Button
-    Friend WithEvents MessageLbl As Label
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GraficaDocenteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GraficaCursoToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -40,12 +40,17 @@
         ctrl = New MainController(Me)
     End Sub
 
-    Private Sub GraficaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GraficaToolStripMenuItem.Click
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub GraficaCursoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GraficaCursoToolStripMenuItem.Click
         Dim grafica As GraficaView = New GraficaView
         grafica.ShowDialog()
     End Sub
 
-    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
-        Me.Close()
+    Private Sub GraficaDocenteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GraficaDocenteToolStripMenuItem.Click
+        Dim graficaDocente As GraficaDocenteView = New GraficaDocenteView
+        graficaDocente.ShowDialog()
     End Sub
 End Class

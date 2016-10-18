@@ -177,18 +177,27 @@ Public Class EncuestaADO
         Return result
     End Function
 
-    Public Function GetDataDocenteGrafica(Fecha As Date, Id_carrera As Integer, Id_jornada As Integer) As List(Of Dictionary(Of String, Object))
+    Public Function GetDataDocenteGrafica(Fecha As Date, Id_carrera As Integer, Id_jornada As Integer, MinValue As Integer, MaxValue As Integer) As List(Of Dictionary(Of String, Object))
         Dim result As List(Of Dictionary(Of String, Object)) = New List(Of Dictionary(Of String, Object))
         Dim parameters As List(Of OleDbParameter) = New List(Of OleDbParameter)
         Dim connection As OleDbConnection = ConexionUtil.GetConnection()
         Dim sbSql As String
 
-        sbSql = " SELECT Curso.Nombre, Encuesta.codigo_resp, Count(*) "
-        sbSql &= " FROM (Curso INNER JOIN Encuesta ON Curso.Id = Encuesta.Id_curso) "
+        sbSql = "SELECT x.Nombre, Avg(x.puntos), Count(*) FROM ("
+        sbSql &= " SELECT Docente.Nombre, Encuesta.Id_carrera, Encuesta.Id_docente, Encuesta.Id_curso, Encuesta.Id_jornada, Sum(Encuesta.puntos) As puntos "
+        sbSql &= " FROM (Docente INNER JOIN Encuesta ON Docente.Id = Encuesta.Id_docente) "
         sbSql &= " WHERE DateValue(Encuesta.fecha) = DateValue(@Fecha) "
         sbSql &= "   AND Encuesta.Id_carrera = @Id_carrera "
         sbSql &= "   AND Encuesta.Id_jornada = @Id_jornada "
-        sbSql &= " GROUP BY Curso.Nombre, Encuesta.codigo_resp "
+        sbSql &= " GROUP BY Docente.Nombre, Encuesta.Id_carrera, Encuesta.Id_docente, Encuesta.Id_curso, Encuesta.Id_jornada "
+        sbSql &= " ) As x "
+
+        If (MinValue > 0 AndAlso MaxValue > 0) Then
+            sbSql &= " WHERE Avg(x.puntos) BETWEEN @MinValue AND @MaxValue "
+        End If
+
+        sbSql &= "  GROUP BY x.Nombre "
+        sbSql &= " ORDER BY Avg(x.puntos) DESC; "
 
         parameters.Add(New OleDbParameter("@Fecha", Fecha))
         parameters.Add(New OleDbParameter("@Id_carrera", Id_carrera))
@@ -202,7 +211,7 @@ Public Class EncuestaADO
                     Dim linea As Dictionary(Of String, Object) = New Dictionary(Of String, Object)
 
                     linea.Add("Nombre", reader.GetString(0))
-                    linea.Add("Codigo", reader.GetString(1))
+                    linea.Add("Promedio", reader.GetDouble(1))
                     linea.Add("Cantidad", reader.GetInt32(2))
 
                     result.Add(linea)

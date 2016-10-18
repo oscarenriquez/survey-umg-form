@@ -87,6 +87,27 @@ EncuestaUMG
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:EncuestaUMG.EncuestaADO.CreateEntity(EncuestaUMG.Encuesta)">
+ <summary>
+ MethodSubprocess to create Encuesta row
+ </summary>
+ <param name="entity">Object that refers Encuesta Table</param>
+</member>
+<member name="M:EncuestaUMG.EncuestaADO.GetAllData">
+ <summary>
+ Function to get all data of Encuesta table
+ </summary>
+ <returns>List of string that refer all encuesta data</returns>
+</member>
+<member name="M:EncuestaUMG.EncuestaADO.GetDataGrafica(System.DateTime,System.Int32,System.Int32)">
+ <summary>
+ Function to get graphic group by Curso
+ </summary>
+ <param name="Fecha"></param>
+ <param name="Id_carrera"></param>
+ <param name="Id_jornada"></param>
+ <returns>List of Dictionary</returns>
+</member>
 <member name="T:EncuestaUMG.EncuestaUMGdbDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.

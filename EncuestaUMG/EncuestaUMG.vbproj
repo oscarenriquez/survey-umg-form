@@ -118,6 +118,7 @@
     <Compile Include="ADO\JornadaADO.vb" />
     <Compile Include="BusinessLogic\EncuestaController.vb" />
     <Compile Include="BusinessLogic\GraficaController.vb" />
+    <Compile Include="BusinessLogic\GraficaDocenteController.vb" />
     <Compile Include="BusinessLogic\MainController.vb" />
     <Compile Include="EncuestaUMGdbDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -181,6 +182,12 @@
     <Compile Include="Views\EncuestaView.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Views\GraficaDocenteView.Designer.vb">
+      <DependentUpon>GraficaDocenteView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GraficaDocenteView.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Views\GraficaView.Designer.vb">
       <DependentUpon>GraficaView.vb</DependentUpon>
     </Compile>
@@ -221,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\EncuestaView.resx">
       <DependentUpon>EncuestaView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraficaDocenteView.resx">
+      <DependentUpon>GraficaDocenteView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\GraficaView.resx">
       <DependentUpon>GraficaView.vb</DependentUpon>
@@ -307,6 +317,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_UMG_juvenil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_multiline_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_trending_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_right_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_keyboard_arrow_left_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_sd_storage_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_photo_library_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_pie_chart_outlined_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

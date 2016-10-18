@@ -1,7 +1,7 @@
-﻿Public Class GraficaView
-    Private ctrl As GraficaController
+﻿Public Class GraficaDocenteView
+    Private ctrl As GraficaDocenteController
     Private Sub GraficaView_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ctrl = New GraficaController(Me)
+        ctrl = New GraficaDocenteController(Me)
         ctrl.FillComboBoxes()
     End Sub
 
@@ -17,7 +17,7 @@
         MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
     End Sub
 
-    Private Sub btnExport_Click(sender As Object, e As EventArgs) Handles btnExport.Click
-
+    Private Sub btnExport_Click(sender As Object, e As EventArgs)
+        ctrl.ExportChartToImage()
     End Sub
 End Class
