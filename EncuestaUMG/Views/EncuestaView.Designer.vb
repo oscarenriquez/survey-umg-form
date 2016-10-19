@@ -26,6 +26,7 @@ Partial Class EncuestaView
         Me.tabCtrlEncuesta = New System.Windows.Forms.TabControl()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.btnCancelar = New System.Windows.Forms.Button()
+        Me.btnAceptar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.lblCodigo = New System.Windows.Forms.Label()
@@ -106,6 +107,8 @@ Partial Class EncuestaView
         Me.lbPregunta5 = New System.Windows.Forms.Label()
         Me.lbPregunta6 = New System.Windows.Forms.Label()
         Me.lbPregunta7 = New System.Windows.Forms.Label()
+        Me.btnBack1 = New System.Windows.Forms.Button()
+        Me.btnContinuar1 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.tableCalificacion2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -157,6 +160,8 @@ Partial Class EncuestaView
         Me.lbPregunta10 = New System.Windows.Forms.Label()
         Me.lbPregunta11 = New System.Windows.Forms.Label()
         Me.lbPregunta12 = New System.Windows.Forms.Label()
+        Me.btnBack2 = New System.Windows.Forms.Button()
+        Me.btnContinuar2 = New System.Windows.Forms.Button()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.tableCalificacion3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -236,6 +241,8 @@ Partial Class EncuestaView
         Me.rbB21 = New System.Windows.Forms.RadioButton()
         Me.rbMB21 = New System.Windows.Forms.RadioButton()
         Me.rbEX21 = New System.Windows.Forms.RadioButton()
+        Me.btnBack3 = New System.Windows.Forms.Button()
+        Me.btnContinuar3 = New System.Windows.Forms.Button()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -250,6 +257,7 @@ Partial Class EncuestaView
         Me.Label72 = New System.Windows.Forms.Label()
         Me.Label73 = New System.Windows.Forms.Label()
         Me.Label74 = New System.Windows.Forms.Label()
+        Me.btnBack4 = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.lbTotal = New System.Windows.Forms.Label()
         Me.Label55 = New System.Windows.Forms.Label()
@@ -282,14 +290,6 @@ Partial Class EncuestaView
         Me.lbPregunta23 = New System.Windows.Forms.Label()
         Me.lbPregunta24 = New System.Windows.Forms.Label()
         Me.lbPregunta25 = New System.Windows.Forms.Label()
-        Me.btnAceptar = New System.Windows.Forms.Button()
-        Me.btnBack1 = New System.Windows.Forms.Button()
-        Me.btnContinuar1 = New System.Windows.Forms.Button()
-        Me.btnBack2 = New System.Windows.Forms.Button()
-        Me.btnContinuar2 = New System.Windows.Forms.Button()
-        Me.btnBack3 = New System.Windows.Forms.Button()
-        Me.btnContinuar3 = New System.Windows.Forms.Button()
-        Me.btnBack4 = New System.Windows.Forms.Button()
         Me.btnFinalizar = New System.Windows.Forms.Button()
         Me.tabCtrlEncuesta.SuspendLayout()
         Me.TabPage5.SuspendLayout()
@@ -382,6 +382,23 @@ Partial Class EncuestaView
         Me.btnCancelar.Text = "Cerrar"
         Me.btnCancelar.UseVisualStyleBackColor = False
         '
+        'btnAceptar
+        '
+        Me.btnAceptar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnAceptar.FlatAppearance.BorderSize = 2
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAceptar.ForeColor = System.Drawing.Color.White
+        Me.btnAceptar.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
+        Me.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnAceptar.Location = New System.Drawing.Point(639, 530)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(129, 32)
+        Me.btnAceptar.TabIndex = 5
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = True
+        '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -466,7 +483,7 @@ Partial Class EncuestaView
         Me.cbCurso.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbCurso.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCurso.FormattingEnabled = True
-        Me.cbCurso.Location = New System.Drawing.Point(488, 111)
+        Me.cbCurso.Location = New System.Drawing.Point(488, 110)
         Me.cbCurso.Name = "cbCurso"
         Me.cbCurso.Size = New System.Drawing.Size(218, 24)
         Me.cbCurso.TabIndex = 2
@@ -488,7 +505,7 @@ Partial Class EncuestaView
         Me.cbDocente.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbDocente.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbDocente.FormattingEnabled = True
-        Me.cbDocente.Location = New System.Drawing.Point(152, 29)
+        Me.cbDocente.Location = New System.Drawing.Point(152, 28)
         Me.cbDocente.Name = "cbDocente"
         Me.cbDocente.Size = New System.Drawing.Size(218, 24)
         Me.cbDocente.TabIndex = 0
@@ -510,7 +527,7 @@ Partial Class EncuestaView
         Me.cbCarrera.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbCarrera.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbCarrera.FormattingEnabled = True
-        Me.cbCarrera.Location = New System.Drawing.Point(152, 111)
+        Me.cbCarrera.Location = New System.Drawing.Point(152, 110)
         Me.cbCarrera.Name = "cbCarrera"
         Me.cbCarrera.Size = New System.Drawing.Size(218, 24)
         Me.cbCarrera.TabIndex = 1
@@ -1455,6 +1472,40 @@ Partial Class EncuestaView
     "antes"
         Me.lbPregunta7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'btnBack1
+        '
+        Me.btnBack1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBack1.FlatAppearance.BorderSize = 2
+        Me.btnBack1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack1.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack1.ForeColor = System.Drawing.Color.White
+        Me.btnBack1.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
+        Me.btnBack1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBack1.Location = New System.Drawing.Point(11, 543)
+        Me.btnBack1.Name = "btnBack1"
+        Me.btnBack1.Size = New System.Drawing.Size(129, 32)
+        Me.btnBack1.TabIndex = 8
+        Me.btnBack1.Text = "Regresar"
+        Me.btnBack1.UseVisualStyleBackColor = True
+        '
+        'btnContinuar1
+        '
+        Me.btnContinuar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnContinuar1.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnContinuar1.FlatAppearance.BorderSize = 2
+        Me.btnContinuar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnContinuar1.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnContinuar1.ForeColor = System.Drawing.Color.White
+        Me.btnContinuar1.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
+        Me.btnContinuar1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnContinuar1.Location = New System.Drawing.Point(629, 543)
+        Me.btnContinuar1.Name = "btnContinuar1"
+        Me.btnContinuar1.Size = New System.Drawing.Size(129, 32)
+        Me.btnContinuar1.TabIndex = 7
+        Me.btnContinuar1.Text = "Continuar"
+        Me.btnContinuar1.UseVisualStyleBackColor = True
+        '
         'TabPage2
         '
         Me.TabPage2.AutoScroll = True
@@ -2152,6 +2203,40 @@ Partial Class EncuestaView
         Me.lbPregunta12.TabIndex = 16
         Me.lbPregunta12.Text = "Aplicación de cursos homologados como base o en acuerdo con la coordinación"
         Me.lbPregunta12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnBack2
+        '
+        Me.btnBack2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBack2.FlatAppearance.BorderSize = 2
+        Me.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack2.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack2.ForeColor = System.Drawing.Color.White
+        Me.btnBack2.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
+        Me.btnBack2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBack2.Location = New System.Drawing.Point(11, 543)
+        Me.btnBack2.Name = "btnBack2"
+        Me.btnBack2.Size = New System.Drawing.Size(129, 32)
+        Me.btnBack2.TabIndex = 1
+        Me.btnBack2.Text = "Regresar"
+        Me.btnBack2.UseVisualStyleBackColor = True
+        '
+        'btnContinuar2
+        '
+        Me.btnContinuar2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnContinuar2.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnContinuar2.FlatAppearance.BorderSize = 2
+        Me.btnContinuar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnContinuar2.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnContinuar2.ForeColor = System.Drawing.Color.White
+        Me.btnContinuar2.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
+        Me.btnContinuar2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnContinuar2.Location = New System.Drawing.Point(629, 543)
+        Me.btnContinuar2.Name = "btnContinuar2"
+        Me.btnContinuar2.Size = New System.Drawing.Size(129, 32)
+        Me.btnContinuar2.TabIndex = 0
+        Me.btnContinuar2.Text = "Continuar"
+        Me.btnContinuar2.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
@@ -3211,6 +3296,40 @@ Partial Class EncuestaView
         Me.rbEX21.Text = "EX"
         Me.rbEX21.UseVisualStyleBackColor = True
         '
+        'btnBack3
+        '
+        Me.btnBack3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack3.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBack3.FlatAppearance.BorderSize = 2
+        Me.btnBack3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack3.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack3.ForeColor = System.Drawing.Color.White
+        Me.btnBack3.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
+        Me.btnBack3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBack3.Location = New System.Drawing.Point(8, 543)
+        Me.btnBack3.Name = "btnBack3"
+        Me.btnBack3.Size = New System.Drawing.Size(129, 32)
+        Me.btnBack3.TabIndex = 1
+        Me.btnBack3.Text = "Regresar"
+        Me.btnBack3.UseVisualStyleBackColor = True
+        '
+        'btnContinuar3
+        '
+        Me.btnContinuar3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnContinuar3.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnContinuar3.FlatAppearance.BorderSize = 2
+        Me.btnContinuar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnContinuar3.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnContinuar3.ForeColor = System.Drawing.Color.White
+        Me.btnContinuar3.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
+        Me.btnContinuar3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnContinuar3.Location = New System.Drawing.Point(633, 543)
+        Me.btnContinuar3.Name = "btnContinuar3"
+        Me.btnContinuar3.Size = New System.Drawing.Size(129, 32)
+        Me.btnContinuar3.TabIndex = 0
+        Me.btnContinuar3.Text = "Continuar"
+        Me.btnContinuar3.UseVisualStyleBackColor = True
+        '
         'TabPage4
         '
         Me.TabPage4.AutoScroll = True
@@ -3413,6 +3532,23 @@ Partial Class EncuestaView
         Me.Label74.TabIndex = 0
         Me.Label74.Text = "EX"
         Me.Label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnBack4
+        '
+        Me.btnBack4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnBack4.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnBack4.FlatAppearance.BorderSize = 2
+        Me.btnBack4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack4.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBack4.ForeColor = System.Drawing.Color.White
+        Me.btnBack4.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
+        Me.btnBack4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBack4.Location = New System.Drawing.Point(8, 543)
+        Me.btnBack4.Name = "btnBack4"
+        Me.btnBack4.Size = New System.Drawing.Size(129, 32)
+        Me.btnBack4.TabIndex = 1
+        Me.btnBack4.Text = "Regresar"
+        Me.btnBack4.UseVisualStyleBackColor = True
         '
         'GroupBox5
         '
@@ -3836,142 +3972,6 @@ Partial Class EncuestaView
         Me.lbPregunta25.TabIndex = 15
         Me.lbPregunta25.Text = "Demuestra compromiso con la institución"
         Me.lbPregunta25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'btnAceptar
-        '
-        Me.btnAceptar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnAceptar.FlatAppearance.BorderSize = 2
-        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAceptar.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAceptar.ForeColor = System.Drawing.Color.White
-        Me.btnAceptar.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
-        Me.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnAceptar.Location = New System.Drawing.Point(639, 530)
-        Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(129, 32)
-        Me.btnAceptar.TabIndex = 5
-        Me.btnAceptar.Text = "Aceptar"
-        Me.btnAceptar.UseVisualStyleBackColor = True
-        '
-        'btnBack1
-        '
-        Me.btnBack1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnBack1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBack1.FlatAppearance.BorderSize = 2
-        Me.btnBack1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack1.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack1.ForeColor = System.Drawing.Color.White
-        Me.btnBack1.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
-        Me.btnBack1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBack1.Location = New System.Drawing.Point(11, 543)
-        Me.btnBack1.Name = "btnBack1"
-        Me.btnBack1.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack1.TabIndex = 8
-        Me.btnBack1.Text = "Regresar"
-        Me.btnBack1.UseVisualStyleBackColor = True
-        '
-        'btnContinuar1
-        '
-        Me.btnContinuar1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnContinuar1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnContinuar1.FlatAppearance.BorderSize = 2
-        Me.btnContinuar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnContinuar1.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnContinuar1.ForeColor = System.Drawing.Color.White
-        Me.btnContinuar1.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
-        Me.btnContinuar1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnContinuar1.Location = New System.Drawing.Point(629, 543)
-        Me.btnContinuar1.Name = "btnContinuar1"
-        Me.btnContinuar1.Size = New System.Drawing.Size(129, 32)
-        Me.btnContinuar1.TabIndex = 7
-        Me.btnContinuar1.Text = "Continuar"
-        Me.btnContinuar1.UseVisualStyleBackColor = True
-        '
-        'btnBack2
-        '
-        Me.btnBack2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnBack2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBack2.FlatAppearance.BorderSize = 2
-        Me.btnBack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack2.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack2.ForeColor = System.Drawing.Color.White
-        Me.btnBack2.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
-        Me.btnBack2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBack2.Location = New System.Drawing.Point(11, 543)
-        Me.btnBack2.Name = "btnBack2"
-        Me.btnBack2.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack2.TabIndex = 1
-        Me.btnBack2.Text = "Regresar"
-        Me.btnBack2.UseVisualStyleBackColor = True
-        '
-        'btnContinuar2
-        '
-        Me.btnContinuar2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnContinuar2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnContinuar2.FlatAppearance.BorderSize = 2
-        Me.btnContinuar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnContinuar2.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnContinuar2.ForeColor = System.Drawing.Color.White
-        Me.btnContinuar2.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
-        Me.btnContinuar2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnContinuar2.Location = New System.Drawing.Point(629, 543)
-        Me.btnContinuar2.Name = "btnContinuar2"
-        Me.btnContinuar2.Size = New System.Drawing.Size(129, 32)
-        Me.btnContinuar2.TabIndex = 0
-        Me.btnContinuar2.Text = "Continuar"
-        Me.btnContinuar2.UseVisualStyleBackColor = True
-        '
-        'btnBack3
-        '
-        Me.btnBack3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnBack3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBack3.FlatAppearance.BorderSize = 2
-        Me.btnBack3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack3.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack3.ForeColor = System.Drawing.Color.White
-        Me.btnBack3.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
-        Me.btnBack3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBack3.Location = New System.Drawing.Point(8, 543)
-        Me.btnBack3.Name = "btnBack3"
-        Me.btnBack3.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack3.TabIndex = 1
-        Me.btnBack3.Text = "Regresar"
-        Me.btnBack3.UseVisualStyleBackColor = True
-        '
-        'btnContinuar3
-        '
-        Me.btnContinuar3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnContinuar3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnContinuar3.FlatAppearance.BorderSize = 2
-        Me.btnContinuar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnContinuar3.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnContinuar3.ForeColor = System.Drawing.Color.White
-        Me.btnContinuar3.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white
-        Me.btnContinuar3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnContinuar3.Location = New System.Drawing.Point(633, 543)
-        Me.btnContinuar3.Name = "btnContinuar3"
-        Me.btnContinuar3.Size = New System.Drawing.Size(129, 32)
-        Me.btnContinuar3.TabIndex = 0
-        Me.btnContinuar3.Text = "Continuar"
-        Me.btnContinuar3.UseVisualStyleBackColor = True
-        '
-        'btnBack4
-        '
-        Me.btnBack4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnBack4.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnBack4.FlatAppearance.BorderSize = 2
-        Me.btnBack4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack4.Font = New System.Drawing.Font("Arial Narrow", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBack4.ForeColor = System.Drawing.Color.White
-        Me.btnBack4.Image = Global.EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white
-        Me.btnBack4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBack4.Location = New System.Drawing.Point(8, 543)
-        Me.btnBack4.Name = "btnBack4"
-        Me.btnBack4.Size = New System.Drawing.Size(129, 32)
-        Me.btnBack4.TabIndex = 1
-        Me.btnBack4.Text = "Regresar"
-        Me.btnBack4.UseVisualStyleBackColor = True
         '
         'btnFinalizar
         '

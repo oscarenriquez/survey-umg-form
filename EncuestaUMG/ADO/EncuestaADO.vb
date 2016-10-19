@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports System.Globalization
 Imports EncuestaUMG
 
 Public Class EncuestaADO
@@ -77,17 +78,17 @@ Public Class EncuestaADO
         Dim connection As OleDbConnection = ConexionUtil.GetConnection()
         Dim sbSql As String
 
-        sbSql = " SELECT Encuesta.Id, Carrera.Id, Carrera.Nombre, Curso.Id, Curso.Nombre, 
-                         Docente.Id, Docente.Codigo, Docente.Nombre, Jornada.Nombre, 
-                         Encuesta.pregunta, Encuesta.codigo_resp, Encuesta.puntos, Encuesta.fecha "
-        sbSql &= " FROM Jornada INNER JOIN (Docente 
-                                INNER JOIN (Curso 
-                                INNER JOIN (Carrera 
-                                INNER JOIN Encuesta 
-                                    ON Carrera.Id = Encuesta.Id_carrera) 
-                                    ON Curso.Id = Encuesta.Id_curso) 
-                                    ON Docente.Id = Encuesta.Id_docente) 
-                                    ON Jornada.Id = Encuesta.Id_jornada; "
+        sbSql = " SELECT Encuesta.Id, Carrera.Id, Carrera.Nombre, Curso.Id, Curso.Nombre, "
+        sbSql &= " Docente.Id, Docente.Codigo, Docente.Nombre, Jornada.Id, Jornada.Nombre, "
+        sbSql &= " Encuesta.pregunta, Encuesta.codigo_resp, Encuesta.puntos, Encuesta.fecha "
+        sbSql &= " FROM Jornada INNER JOIN (Docente  "
+        sbSql &= " INNER Join(Curso  "
+        sbSql &= " INNER JOIN (Carrera  "
+        sbSql &= " INNER Join Encuesta  "
+        sbSql &= " On Carrera.Id = Encuesta.Id_carrera)  "
+        sbSql &= " On Curso.Id = Encuesta.Id_curso)  "
+        sbSql &= " On Docente.Id = Encuesta.Id_docente)  "
+        sbSql &= " ON Jornada.Id = Encuesta.Id_jornada; "
 
         Try
             connection.Open()
@@ -95,20 +96,20 @@ Public Class EncuestaADO
             If reader.HasRows Then
                 Do While reader.Read
                     Dim linea As String
-                    linea = reader.GetInt32(0) & "|" & 'Encuesta.Id
-                            reader.GetInt32(1) & "|" & 'Carrera.Id
-                            reader.GetString(2) & "|" & 'Carrera.Nombre
-                            reader.GetInt32(3) & "|" & 'Curso.Id
-                            reader.GetString(4) & "|" & 'Curso.Nombre
-                            reader.GetInt32(5) & "|" & 'Docente.Id
-                            reader.GetInt32(6) & "|" & 'Docente.Codigo
-                            reader.GetString(7) & "|" & 'Docente.Nombre
-                            reader.GetInt32(8) & "|" & 'Jornada.Id
-                            reader.GetString(9) & "|" & 'Jornada.Nombre
-                            reader.GetString(10) & "|" & 'Encuesta.pregunta
-                            reader.GetString(11) & "|" & 'Encuesta.codigo_resp
-                            reader.GetInt32(12) & "|" & 'Encuesta.puntos
-                            reader.GetDateTime(13) 'Encuesta.fecha
+                    linea = reader.GetInt32(0) & "|" 'Encuesta.Id
+                    linea &= reader.GetInt32(1) & "|" 'Carrera.Id
+                    linea &= reader.GetString(2) & "|" 'Carrera.Nombre
+                    linea &= reader.GetInt32(3) & "|" 'Curso.Id
+                    linea &= reader.GetString(4) & "|" 'Curso.Nombre
+                    linea &= reader.GetInt32(5) & "|" 'Docente.Id
+                    linea &= reader.GetInt32(6) & "|" 'Docente.Codigo
+                    linea &= reader.GetString(7) & "|" 'Docente.Nombre
+                    linea &= reader.GetInt32(8) & "|" 'Jornada.Id
+                    linea &= reader.GetString(9) & "|" 'Jornada.Nombre
+                    linea &= reader.GetString(10) & "|" 'Encuesta.pregunta
+                    linea &= reader.GetString(11) & "|" 'Encuesta.codigo_resp
+                    linea &= reader.GetInt32(12) & "|" 'Encuesta.puntos
+                    linea &= reader.GetDateTime(13).ToString("d/MM/yyyy H:mm:ss") 'Encuesta.fecha
 
                     result.Add(linea)
                 Loop
@@ -183,7 +184,8 @@ Public Class EncuestaADO
         Dim connection As OleDbConnection = ConexionUtil.GetConnection()
         Dim sbSql As String
 
-        sbSql = "SELECT x.Nombre, Avg(x.puntos), Count(*) FROM ("
+        sbSql = "SELECT y.Nombre, y.Promedio, y.Cantidad FROM ("
+        sbSql &= "SELECT x.Nombre As Nombre, Avg(x.puntos) As Promedio, Count(*) As Cantidad FROM ("
         sbSql &= " SELECT Docente.Nombre, Encuesta.Id_carrera, Encuesta.Id_docente, Encuesta.Id_curso, Encuesta.Id_jornada, Sum(Encuesta.puntos) As puntos "
         sbSql &= " FROM (Docente INNER JOIN Encuesta ON Docente.Id = Encuesta.Id_docente) "
         sbSql &= " WHERE DateValue(Encuesta.fecha) = DateValue(@Fecha) "
@@ -191,17 +193,22 @@ Public Class EncuestaADO
         sbSql &= "   AND Encuesta.Id_jornada = @Id_jornada "
         sbSql &= " GROUP BY Docente.Nombre, Encuesta.Id_carrera, Encuesta.Id_docente, Encuesta.Id_curso, Encuesta.Id_jornada "
         sbSql &= " ) As x "
-
-        If (MinValue > 0 AndAlso MaxValue > 0) Then
-            sbSql &= " WHERE Avg(x.puntos) BETWEEN @MinValue AND @MaxValue "
-        End If
-
         sbSql &= "  GROUP BY x.Nombre "
-        sbSql &= " ORDER BY Avg(x.puntos) DESC; "
+        sbSql &= " ) As y "
+        If (MinValue > 0 AndAlso MaxValue > 0) Then
+            sbSql &= " WHERE y.Promedio BETWEEN @MinValue AND @MaxValue "
+        End If
+        sbSql &= " ORDER BY y.Promedio DESC; "
+
 
         parameters.Add(New OleDbParameter("@Fecha", Fecha))
         parameters.Add(New OleDbParameter("@Id_carrera", Id_carrera))
         parameters.Add(New OleDbParameter("@Id_jornada", Id_jornada))
+
+        If (MinValue > 0 AndAlso MaxValue > 0) Then
+            parameters.Add(New OleDbParameter("@MinValue", MinValue))
+            parameters.Add(New OleDbParameter("@MaxValue", MaxValue))
+        End If
 
         Try
             connection.Open()
@@ -228,6 +235,58 @@ Public Class EncuestaADO
         End Try
 
         Return result
+    End Function
+
+    Public Function ExisteEncuesta(IdCarrera As Integer, IdJornada As Integer, IdCurso As Integer, IdDocente As Integer, Fecha As Date) As Boolean
+        Dim existe As Boolean = False
+        Dim parameters As List(Of OleDbParameter) = New List(Of OleDbParameter)
+        Dim connection As OleDbConnection = ConexionUtil.GetConnection()
+        Dim sbSql As String
+        sbSql = "  SELECT Count(*) FROM Encuesta "
+        sbSql &= "   WHERE Encuesta.Id_carrera = @Id_carrera AND  Encuesta.Id_jornada = @Id_jornada "
+        'sbSql &= "     AND Encuesta.Id_curso = @Id_curso "
+        'sbSql &= " AND Encuesta.Id_docente = @Id_docente "
+        sbSql &= " AND Year(Encuesta.fecha) = Year(@fecha) AND Month(Encuesta.fecha) = Month(@fecha)  "
+        sbSql &= " AND Day(Encuesta.fecha) = Day(@fecha)  "
+
+        Dim param1 = New OleDbParameter("@Id_carrera", OleDbType.Integer)
+        'Dim param2 = New OleDbParameter("@Id_docente", OleDbType.Integer)
+        'Dim param3 = New OleDbParameter("@Id_curso", OleDbType.Integer)
+        Dim param4 = New OleDbParameter("@Id_jornada", OleDbType.Integer)
+        Dim param5 = New OleDbParameter("@fecha", OleDbType.Date)
+
+        param1.Value = IdCarrera
+        'param2.Value = IdDocente
+        'param3.Value = IdCurso
+        param4.Value = IdJornada
+        param5.Value = Fecha
+
+        parameters.Add(param1)
+        'parameters.Add(param2)
+        'parameters.Add(param3)
+        parameters.Add(param4)
+        parameters.Add(param5)
+
+        Try
+            connection.Open()
+            Dim reader As OleDb.OleDbDataReader = ConexionUtil.CreateCommandRead(sbSql, connection, parameters)
+            If reader.HasRows AndAlso reader.Read Then
+                Dim cantidad As Integer = reader.GetInt32(0)
+                If cantidad > 0 Then
+                    existe = True
+                End If
+            End If
+            reader.Close()
+        Catch ex As Exception
+            Console.WriteLine(ex.StackTrace)
+            Throw New Exception("Importando Data .... " & ex.Message)
+        Finally
+            If connection IsNot Nothing Then
+                connection.Close()
+            End If
+        End Try
+
+        Return existe
     End Function
 
 End Class

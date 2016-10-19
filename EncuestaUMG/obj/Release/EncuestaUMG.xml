@@ -22,6 +22,11 @@ EncuestaUMG
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:EncuestaUMG.My.Resources.Resources._172">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:EncuestaUMG.My.Resources.Resources._2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -47,7 +52,32 @@ EncuestaUMG
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_left_white">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_keyboard_arrow_right_white">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:EncuestaUMG.My.Resources.Resources.ic_library_books">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_multiline_chart">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_photo_library_white">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -57,7 +87,17 @@ EncuestaUMG
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_pie_chart_outlined_white">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:EncuestaUMG.My.Resources.Resources.ic_school">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_sd_storage_white">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -83,6 +123,21 @@ EncuestaUMG
 </summary>
 </member>
 <member name="P:EncuestaUMG.My.Resources.Resources.ic_text_fields">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.ic_trending_up">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.LOGO_UMG_juvenil">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:EncuestaUMG.My.Resources.Resources.mini">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

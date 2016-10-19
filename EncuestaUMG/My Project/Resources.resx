@@ -121,8 +121,8 @@
   <data name="aside_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aside_bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_keyboard_arrow_left_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_keyboard_arrow_left_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,11 +133,14 @@
   <data name="ic_supervisor_account" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_supervisor_account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_keyboard_arrow_left_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_keyboard_arrow_left_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_multiline_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_multiline_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_pie_chart_outlined_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_pie_chart_outlined_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGO_UMG_juvenil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO_UMG_juvenil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +163,9 @@
   <data name="ic_photo_library_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_photo_library_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_trending_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_trending_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,7 +187,7 @@
   <data name="ic_pie_chart_outlined" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_pie_chart_outlined.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_pie_chart_outlined_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_pie_chart_outlined_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mini.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

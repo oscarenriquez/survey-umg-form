@@ -34,12 +34,14 @@ Partial Class Form1
         Me.GraficaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GraficaDocenteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GraficaCursoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuImportarArchivo = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WelcomeLbl = New System.Windows.Forms.Label()
         Me.btnResponder = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,7 +95,7 @@ Partial Class Form1
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportarArchivoToolStripMenuItem, Me.GraficaToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportarArchivoToolStripMenuItem, Me.GraficaToolStripMenuItem, Me.MenuImportarArchivo})
         Me.ReportesToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_card_membership
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
@@ -103,7 +105,7 @@ Partial Class Form1
         '
         Me.ExportarArchivoToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_insert_photo
         Me.ExportarArchivoToolStripMenuItem.Name = "ExportarArchivoToolStripMenuItem"
-        Me.ExportarArchivoToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.ExportarArchivoToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.ExportarArchivoToolStripMenuItem.Text = "Exportar Archivo"
         '
         'GraficaToolStripMenuItem
@@ -111,7 +113,7 @@ Partial Class Form1
         Me.GraficaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GraficaDocenteToolStripMenuItem, Me.GraficaCursoToolStripMenuItem})
         Me.GraficaToolStripMenuItem.Image = Global.EncuestaUMG.My.Resources.Resources.ic_pie_chart_outlined
         Me.GraficaToolStripMenuItem.Name = "GraficaToolStripMenuItem"
-        Me.GraficaToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.GraficaToolStripMenuItem.Size = New System.Drawing.Size(164, 22)
         Me.GraficaToolStripMenuItem.Text = "Dashboard"
         '
         'GraficaDocenteToolStripMenuItem
@@ -127,6 +129,13 @@ Partial Class Form1
         Me.GraficaCursoToolStripMenuItem.Name = "GraficaCursoToolStripMenuItem"
         Me.GraficaCursoToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.GraficaCursoToolStripMenuItem.Text = "Grafica Curso"
+        '
+        'MenuImportarArchivo
+        '
+        Me.MenuImportarArchivo.Image = Global.EncuestaUMG.My.Resources.Resources.ic_library_books
+        Me.MenuImportarArchivo.Name = "MenuImportarArchivo"
+        Me.MenuImportarArchivo.Size = New System.Drawing.Size(164, 22)
+        Me.MenuImportarArchivo.Text = "Importar Archivo"
         '
         'ToolStripMenuItem1
         '
@@ -181,6 +190,10 @@ Partial Class Form1
         Me.SaveFileDialog1.FileName = "Reporte"
         Me.SaveFileDialog1.Filter = "TXT Files (*.txt*)|*.txt"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -221,4 +234,6 @@ Partial Class Form1
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GraficaDocenteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GraficaCursoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents MenuImportarArchivo As ToolStripMenuItem
 End Class

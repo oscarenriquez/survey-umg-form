@@ -22,3 +22,5 @@ C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\Encue
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.exe.manifest
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.application
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.GraficaDocenteView.resources
+C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.LoginForm.resources
+C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Debug\EncuestaUMG.LoadingView.resources

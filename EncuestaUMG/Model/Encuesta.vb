@@ -37,6 +37,9 @@
 
     End Sub
 
+    Public Sub New()
+
+    End Sub
 
     Public Property Id As Integer
         Get
