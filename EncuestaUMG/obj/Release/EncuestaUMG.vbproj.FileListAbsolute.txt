@@ -20,7 +20,7 @@ C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\Encue
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.exe
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.xml
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.pdb
-C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.vbprojResolveAssemblyReference.cache
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.GraficaDocenteView.resources
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.LoadingView.resources
 C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.LoginForm.resources
+C:\Users\Oscar Enríquez\Documents\Visual Studio 2015\Projects\EncuestaUMG\EncuestaUMG\obj\Release\EncuestaUMG.vbprojResolveAssemblyReference.cache

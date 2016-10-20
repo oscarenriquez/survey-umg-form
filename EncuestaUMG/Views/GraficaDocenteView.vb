@@ -20,4 +20,8 @@
     Private Sub btnExport_Click(sender As Object, e As EventArgs)
         ctrl.ExportChartToImage()
     End Sub
+
+    Private Sub btnExport_Click_1(sender As Object, e As EventArgs) Handles btnExport.Click
+        ctrl.ExportChartToImage()
+    End Sub
 End Class

@@ -22,14 +22,15 @@ Partial Class GraficaView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GraficaView))
         Me.gpFiltrosGrafica = New System.Windows.Forms.GroupBox()
+        Me.btnExport = New System.Windows.Forms.Button()
         Me.tableFiltros = New System.Windows.Forms.TableLayoutPanel()
         Me.dtGFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,10 +38,9 @@ Partial Class GraficaView
         Me.cbGCarrera = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lbFecha = New System.Windows.Forms.Label()
+        Me.btnGenerar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.btnExport = New System.Windows.Forms.Button()
-        Me.btnGenerar = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.gpFiltrosGrafica.SuspendLayout()
         Me.tableFiltros.SuspendLayout()
@@ -62,6 +62,23 @@ Partial Class GraficaView
         Me.gpFiltrosGrafica.TabIndex = 0
         Me.gpFiltrosGrafica.TabStop = False
         Me.gpFiltrosGrafica.Text = "Filtros"
+        '
+        'btnExport
+        '
+        Me.btnExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnExport.BackColor = System.Drawing.Color.LimeGreen
+        Me.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnExport.FlatAppearance.BorderSize = 2
+        Me.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExport.ForeColor = System.Drawing.Color.White
+        Me.btnExport.Image = Global.EncuestaUMG.My.Resources.Resources.ic_photo_library_white
+        Me.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnExport.Location = New System.Drawing.Point(12, 108)
+        Me.btnExport.Name = "btnExport"
+        Me.btnExport.Size = New System.Drawing.Size(154, 30)
+        Me.btnExport.TabIndex = 1
+        Me.btnExport.Text = "Exportar"
+        Me.btnExport.UseVisualStyleBackColor = False
         '
         'tableFiltros
         '
@@ -109,7 +126,7 @@ Partial Class GraficaView
         '
         Me.cbGJornada.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbGJornada.FormattingEnabled = True
-        Me.cbGJornada.Location = New System.Drawing.Point(611, 21)
+        Me.cbGJornada.Location = New System.Drawing.Point(611, 25)
         Me.cbGJornada.Name = "cbGJornada"
         Me.cbGJornada.Size = New System.Drawing.Size(158, 28)
         Me.cbGJornada.TabIndex = 2
@@ -118,7 +135,7 @@ Partial Class GraficaView
         '
         Me.cbGCarrera.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbGCarrera.FormattingEnabled = True
-        Me.cbGCarrera.Location = New System.Drawing.Point(355, 21)
+        Me.cbGCarrera.Location = New System.Drawing.Point(355, 25)
         Me.cbGCarrera.Name = "cbGCarrera"
         Me.cbGCarrera.Size = New System.Drawing.Size(154, 28)
         Me.cbGCarrera.TabIndex = 1
@@ -143,64 +160,6 @@ Partial Class GraficaView
         Me.lbFecha.Text = "Fecha:"
         Me.lbFecha.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Panel1
-        '
-        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.Controls.Add(Me.Chart1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 177)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(756, 422)
-        Me.Panel1.TabIndex = 1
-        '
-        'Chart1
-        '
-        Me.Chart1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "RESULTADOS"
-        Me.Chart1.Legends.Add(Legend2)
-        Me.Chart1.Location = New System.Drawing.Point(0, -13)
-        Me.Chart1.Name = "Chart1"
-        Series5.ChartArea = "ChartArea1"
-        Series5.Legend = "RESULTADOS"
-        Series5.Name = "EX"
-        Series6.ChartArea = "ChartArea1"
-        Series6.Legend = "RESULTADOS"
-        Series6.Name = "MB"
-        Series7.ChartArea = "ChartArea1"
-        Series7.Legend = "RESULTADOS"
-        Series7.Name = "B"
-        Series8.ChartArea = "ChartArea1"
-        Series8.Legend = "RESULTADOS"
-        Series8.Name = "NM"
-        Me.Chart1.Series.Add(Series5)
-        Me.Chart1.Series.Add(Series6)
-        Me.Chart1.Series.Add(Series7)
-        Me.Chart1.Series.Add(Series8)
-        Me.Chart1.Size = New System.Drawing.Size(756, 435)
-        Me.Chart1.TabIndex = 0
-        Me.Chart1.Text = "Grafica"
-        '
-        'btnExport
-        '
-        Me.btnExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnExport.BackColor = System.Drawing.Color.LimeGreen
-        Me.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnExport.FlatAppearance.BorderSize = 2
-        Me.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExport.ForeColor = System.Drawing.Color.White
-        Me.btnExport.Image = Global.EncuestaUMG.My.Resources.Resources.ic_photo_library_white
-        Me.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnExport.Location = New System.Drawing.Point(12, 108)
-        Me.btnExport.Name = "btnExport"
-        Me.btnExport.Size = New System.Drawing.Size(154, 30)
-        Me.btnExport.TabIndex = 1
-        Me.btnExport.Text = "Exportar"
-        Me.btnExport.UseVisualStyleBackColor = False
-        '
         'btnGenerar
         '
         Me.btnGenerar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -217,6 +176,47 @@ Partial Class GraficaView
         Me.btnGenerar.TabIndex = 0
         Me.btnGenerar.Text = "Generar"
         Me.btnGenerar.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.Controls.Add(Me.Chart1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 177)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(756, 422)
+        Me.Panel1.TabIndex = 1
+        '
+        'Chart1
+        '
+        Me.Chart1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "RESULTADOS"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(0, -13)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "RESULTADOS"
+        Series1.Name = "EX"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "RESULTADOS"
+        Series2.Name = "MB"
+        Series3.ChartArea = "ChartArea1"
+        Series3.Legend = "RESULTADOS"
+        Series3.Name = "B"
+        Series4.ChartArea = "ChartArea1"
+        Series4.Legend = "RESULTADOS"
+        Series4.Name = "NM"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Series.Add(Series2)
+        Me.Chart1.Series.Add(Series3)
+        Me.Chart1.Series.Add(Series4)
+        Me.Chart1.Size = New System.Drawing.Size(756, 435)
+        Me.Chart1.TabIndex = 0
+        Me.Chart1.Text = "Grafica"
         '
         'SaveFileDialog1
         '

@@ -8,7 +8,6 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CheckForIllegalCrossThreadCalls = False
         ctrl = New MainController(Me)
-        cargando = New LoadingView
     End Sub
 
     Private Sub DocentesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DocentesToolStripMenuItem.Click
@@ -84,6 +83,7 @@ Public Class Form1
     End Sub
 
     Private Sub MenuImportarArchivo_Click(sender As Object, e As EventArgs) Handles MenuImportarArchivo.Click
+        cargando = New LoadingView
         Dim loginForm = New LoginForm
         Dim result = LoginForm.ShowDialog(Me)
         If result = DialogResult.OK Then

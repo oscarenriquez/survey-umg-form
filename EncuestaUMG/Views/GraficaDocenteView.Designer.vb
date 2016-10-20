@@ -27,6 +27,7 @@ Partial Class GraficaDocenteView
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GraficaDocenteView))
         Me.gpFiltrosGrafica = New System.Windows.Forms.GroupBox()
+        Me.btnExport = New System.Windows.Forms.Button()
         Me.tableFiltros = New System.Windows.Forms.TableLayoutPanel()
         Me.dtGFecha = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class GraficaDocenteView
         Me.btnGenerar = New System.Windows.Forms.Button()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.btnExport = New System.Windows.Forms.Button()
         Me.gpFiltrosGrafica.SuspendLayout()
         Me.tableFiltros.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,6 +60,23 @@ Partial Class GraficaDocenteView
         Me.gpFiltrosGrafica.TabIndex = 1
         Me.gpFiltrosGrafica.TabStop = False
         Me.gpFiltrosGrafica.Text = "Filtros"
+        '
+        'btnExport
+        '
+        Me.btnExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnExport.BackColor = System.Drawing.Color.LimeGreen
+        Me.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnExport.FlatAppearance.BorderSize = 2
+        Me.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExport.ForeColor = System.Drawing.Color.White
+        Me.btnExport.Image = Global.EncuestaUMG.My.Resources.Resources.ic_photo_library_white
+        Me.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnExport.Location = New System.Drawing.Point(6, 108)
+        Me.btnExport.Name = "btnExport"
+        Me.btnExport.Size = New System.Drawing.Size(189, 30)
+        Me.btnExport.TabIndex = 1
+        Me.btnExport.Text = "Exportar"
+        Me.btnExport.UseVisualStyleBackColor = False
         '
         'tableFiltros
         '
@@ -111,7 +128,7 @@ Partial Class GraficaDocenteView
         '
         Me.cbGJornada.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbGJornada.FormattingEnabled = True
-        Me.cbGJornada.Location = New System.Drawing.Point(464, 25)
+        Me.cbGJornada.Location = New System.Drawing.Point(464, 21)
         Me.cbGJornada.Name = "cbGJornada"
         Me.cbGJornada.Size = New System.Drawing.Size(109, 28)
         Me.cbGJornada.TabIndex = 2
@@ -120,7 +137,7 @@ Partial Class GraficaDocenteView
         '
         Me.cbGCarrera.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbGCarrera.FormattingEnabled = True
-        Me.cbGCarrera.Location = New System.Drawing.Point(272, 25)
+        Me.cbGCarrera.Location = New System.Drawing.Point(272, 21)
         Me.cbGCarrera.Name = "cbGCarrera"
         Me.cbGCarrera.Size = New System.Drawing.Size(109, 28)
         Me.cbGCarrera.TabIndex = 1
@@ -160,7 +177,7 @@ Partial Class GraficaDocenteView
         '
         Me.cbRango.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbRango.FormattingEnabled = True
-        Me.cbRango.Location = New System.Drawing.Point(656, 21)
+        Me.cbRango.Location = New System.Drawing.Point(656, 25)
         Me.cbRango.Name = "cbRango"
         Me.cbRango.Size = New System.Drawing.Size(113, 28)
         Me.cbRango.TabIndex = 3
@@ -207,23 +224,6 @@ Partial Class GraficaDocenteView
         'SaveFileDialog1
         '
         Me.SaveFileDialog1.FileName = "ChartDocente.jpg"
-        '
-        'btnExport
-        '
-        Me.btnExport.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnExport.BackColor = System.Drawing.Color.LimeGreen
-        Me.btnExport.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnExport.FlatAppearance.BorderSize = 2
-        Me.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnExport.ForeColor = System.Drawing.Color.White
-        Me.btnExport.Image = Global.EncuestaUMG.My.Resources.Resources.ic_photo_library_white
-        Me.btnExport.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnExport.Location = New System.Drawing.Point(6, 108)
-        Me.btnExport.Name = "btnExport"
-        Me.btnExport.Size = New System.Drawing.Size(189, 30)
-        Me.btnExport.TabIndex = 1
-        Me.btnExport.Text = "Exportar"
-        Me.btnExport.UseVisualStyleBackColor = False
         '
         'GraficaDocenteView
         '
